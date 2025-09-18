@@ -18,7 +18,7 @@
   <h1 class="mb-4 text-center">Search Rice Card</h1>
 
   <div class="mb-3">
-    <input type="text" id="searchInput" class="form-control form-control-lg" placeholder="Search by CARDNO or Name" disabled>
+    <input type="text" id="searchInput" class="form-control form-control-lg" placeholder="Search by CARDNO, Name, or Status" disabled>
   </div>
 
   <div class="table-responsive">
@@ -28,6 +28,7 @@
           <th>CARDNO</th>
           <th>HEAD OF THE FAMILY</th>
           <th>UNITS</th>
+          <th>TRANSACTION STATUS</th>
         </tr>
       </thead>
       <tbody></tbody>
@@ -37,16 +38,22 @@
 
 <script>
 let jsonData = [];
+let trnsData = [];
 
-// List of JSON files
+// List of JSON files for card info
 const jsonFiles = ['11.json', '40.json', '12.json'];
 
-// Fetch all JSON files and combine data
+// Fetch all JSON files for card info
 Promise.all(jsonFiles.map(file =>
   fetch(file).then(response => response.json())
 ))
 .then(results => {
   jsonData = results.flat();
+  // Fetch transaction status JSON
+  return fetch('trns.json').then(response => response.json());
+})
+.then(trnsResults => {
+  trnsData = trnsResults;
   document.getElementById('searchInput').disabled = false;
   filterResults(); // show all data initially
 })
@@ -61,19 +68,29 @@ function filterResults() {
 
   if (!jsonData.length) return;
 
-  const results = jsonData.filter(item => 
-    item.CARDNO.toLowerCase().includes(query) ||
-    item['HEAD OF THE FAMILY'].toLowerCase().includes(query)
-  );
+  const results = jsonData.filter(item => {
+    const trnsItem = trnsData.find(t => t.CARDNO === item.CARDNO);
+    const status = trnsItem ? trnsItem.status : 'No';
+    return item.CARDNO.toLowerCase().includes(query) ||
+           item['HEAD OF THE FAMILY'].toLowerCase().includes(query) ||
+           status.toLowerCase().includes(query);
+  });
 
   if (!results.length) {
-    tbody.innerHTML = '<tr><td colspan="3" class="text-center">No results found.</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="4" class="text-center">No results found.</td></tr>';
   } else {
     results.forEach(item => {
+      const trnsItem = trnsData.find(t => t.CARDNO === item.CARDNO);
+      const status = trnsItem ? trnsItem.status : 'No';
+      const color = status.toLowerCase() === 'done' ? 'green' : 'red';
+
       const row = document.createElement('tr');
-      row.innerHTML = `<td><a href="https://aepos.ap.gov.in/Qcodesearch.jsp?rcno=${item.CARDNO}" target="_blank">${item.CARDNO}</a></td>
-                       <td>${item['HEAD OF THE FAMILY']}</td>
-                       <td>${item.UNITS}</td>`;
+      row.innerHTML = `
+        <td><a href="https://aepos.ap.gov.in/Qcodesearch.jsp?rcno=${item.CARDNO}" target="_blank">${item.CARDNO}</a></td>
+        <td>${item['HEAD OF THE FAMILY']}</td>
+        <td>${item.UNITS}</td>
+        <td style="color:${color}; font-weight:bold;">${status}</td>
+      `;
       tbody.appendChild(row);
     });
   }
