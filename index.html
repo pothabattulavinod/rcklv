@@ -40,8 +40,11 @@
 let jsonData = [];
 let trnsData = [];
 
-// List of card JSON files
+// Card JSON files
 const jsonFiles = ['11.json', '40.json', '12.json'];
+
+// Transaction JSON files
+const trnsFiles = ['trns.json', 'trns11.json', 'trns40.json'];
 
 // Load all card JSON files
 Promise.all(jsonFiles.map(file =>
@@ -49,12 +52,14 @@ Promise.all(jsonFiles.map(file =>
 ))
 .then(results => {
   jsonData = results.flat();
-  // Load transaction status JSON
-  return fetch('trns.json').then(res => res.json());
+  // Load all transaction JSON files
+  return Promise.all(trnsFiles.map(file =>
+    fetch(file).then(res => res.json())
+  ));
 })
 .then(trnsResults => {
-  // Make sure trnsData is always an array
-  trnsData = Array.isArray(trnsResults) ? trnsResults : [trnsResults];
+  // Flatten and combine all transaction data
+  trnsData = trnsResults.flat().map(item => item); 
   document.getElementById('searchInput').disabled = false;
   filterResults(); // show all data initially
 })
@@ -100,8 +105,6 @@ function filterResults() {
 }
 </script>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
