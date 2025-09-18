@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Search PDF JSON Data</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    input { padding: 8px; margin: 5px; width: 300px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+    a { color: blue; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<h2>Live Search PDF JSON Data</h2>
+<input type="text" id="searchInput" placeholder="Search by CARDNO or Name" disabled>
+
+<table id="resultsTable" style="display:none;">
+  <thead>
+    <tr>
+      <th>CARDNO</th>
+      <th>HEAD OF THE FAMILY</th>
+      <th>UNITS</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script>
+let jsonData = [];
+
+// 🔹 List of JSON files
+const jsonFiles = ['11.json', '40.json', '12.json'];
+
+// Fetch all JSON files and combine data
+Promise.all(jsonFiles.map(file =>
+  fetch(file)
+    .then(response => response.json())
+))
+.then(results => {
+  // Combine all JSON arrays into one
+  jsonData = results.flat();
+  document.getElementById('searchInput').disabled = false;
+  filterResults(); // show all data initially
+})
+.catch(err => alert("Failed to load one or more JSON files"));
+
+document.getElementById('searchInput').addEventListener('input', filterResults);
+
+function filterResults() {
+  const query = document.getElementById('searchInput').value.toLowerCase();
+  const tbody = document.querySelector('#resultsTable tbody');
+  tbody.innerHTML = '';
+
+  if (!jsonData.length) return;
+
+  const results = jsonData.filter(item => 
+    item.CARDNO.toLowerCase().includes(query) ||
+    item['HEAD OF THE FAMILY'].toLowerCase().includes(query)
+  );
+
+  if (!results.length) {
+    tbody.innerHTML = '<tr><td colspan="3">No results found.</td></tr>';
+  } else {
+    results.forEach(item => {
+      const row = document.createElement('tr');
+      row.innerHTML = `<td><a href="https://aepos.ap.gov.in/Qcodesearch.jsp?rcno=${item.CARDNO}" target="_blank">${item.CARDNO}</a></td>
+                       <td>${item['HEAD OF THE FAMILY']}</td>
+                       <td>${item.UNITS}</td>`;
+      tbody.appendChild(row);
+    });
+  }
+
+  document.getElementById('resultsTable').style.display = 'table';
+}
+</script>
+
+</body>
+</html>
