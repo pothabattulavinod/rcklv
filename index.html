@@ -53,7 +53,8 @@ Promise.all(jsonFiles.map(file =>
   return fetch('trns.json').then(response => response.json());
 })
 .then(trnsResults => {
-  trnsData = trnsResults;
+  // Ensure trnsData is an array
+  trnsData = Array.isArray(trnsResults) ? trnsResults : [trnsResults];
   document.getElementById('searchInput').disabled = false;
   filterResults(); // show all data initially
 })
@@ -70,7 +71,7 @@ function filterResults() {
 
   const results = jsonData.filter(item => {
     const trnsItem = trnsData.find(t => t.CARDNO === item.CARDNO);
-    const status = trnsItem ? trnsItem.status : 'No';
+    const status = trnsItem ? trnsItem.transaction_status : 'No';
     return item.CARDNO.toLowerCase().includes(query) ||
            item['HEAD OF THE FAMILY'].toLowerCase().includes(query) ||
            status.toLowerCase().includes(query);
@@ -81,7 +82,7 @@ function filterResults() {
   } else {
     results.forEach(item => {
       const trnsItem = trnsData.find(t => t.CARDNO === item.CARDNO);
-      const status = trnsItem ? trnsItem.status : 'No';
+      const status = trnsItem ? trnsItem.transaction_status : 'No';
       const color = status.toLowerCase() === 'done' ? 'green' : 'red';
 
       const row = document.createElement('tr');
