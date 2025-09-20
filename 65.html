@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search Rice Card</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { padding: 20px; }
+    a { color: #0d6efd; text-decoration: none; cursor: pointer; }
+    a:hover { text-decoration: underline; }
+    small { color: #6c757d; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="mb-4 text-center">Search Rice Card</h1>
+
+  <div class="mb-3">
+    <input type="text" id="searchInput" class="form-control form-control-lg" placeholder="Search by CARDNO, Name, or Status" disabled>
+  </div>
+
+  <div class="table-responsive">
+    <table id="resultsTable" class="table table-bordered table-striped" style="display:none;">
+      <thead class="table-light">
+        <tr>
+          <th>CARDNO</th>
+          <th>HEAD OF THE FAMILY / MATCHED MEMBER</th>
+          <th>UNITS</th>
+          <th>TRANSACTION STATUS</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- Modal for Family Details -->
+  <div class="modal fade" id="familyModal" tabindex="-1" aria-labelledby="familyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="familyModalLabel">Family Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Relation</th>
+                <th>Gender</th>
+              </tr>
+            </thead>
+            <tbody id="familyDetails"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+let jsonData = [];
+let trnsData = [];
+let familyData = [];
+
+// Card JSON files
+const jsonFiles = ['11.json', '40.json', '12.json'];
+
+// Transaction JSON files
+const trnsFiles = ['trns.json', 'trns11.json', 'trns40.json'];
+
+// Updated family JSON files
+const updatedFiles = ['updated40.json', 'updated11.json', 'updated12.json'];
+
+// Load all card JSON files
+Promise.all(jsonFiles.map(file =>
+  fetch(file).then(res => res.json())
+))
+.then(results => {
+  jsonData = results.flat();
+  // Load all transaction JSON files
+  return Promise.all(trnsFiles.map(file =>
+    fetch(file).then(res => res.json())
+  ));
+})
+.then(trnsResults => {
+  trnsData = trnsResults.flat();
+  // Load all updated family JSON files
+  return Promise.all(updatedFiles.map(file =>
+    fetch(file).then(res => res.json())
+  ));
+})
+.then(updatedResults => {
+  familyData = updatedResults.flat();
+  document.getElementById('searchInput').disabled = false;
+  filterResults(); // show all data initially
+})
+.catch(err => alert("Failed to load one or more JSON files: " + err));
+
+document.getElementById('searchInput').addEventListener('input', filterResults);
+
+function filterResults() {
+  const query = document.getElementById('searchInput').value.toLowerCase();
+  const tbody = document.querySelector('#resultsTable tbody');
+  tbody.innerHTML = '';
+
+  if (!jsonData.length) return;
+
+  const results = jsonData.map(item => {
+    const trnsItem = trnsData.find(t => t.CARDNO === item.CARDNO);
+    const status = trnsItem ? trnsItem.transaction_status : 'No';
+
+    let match = item.CARDNO.toLowerCase().includes(query) ||
+                item['HEAD OF THE FAMILY'].toLowerCase().includes(query) ||
+                status.toLowerCase().includes(query);
+
+    let matchedMember = null;
+
+    // Find family object
+    const familyObj = familyData.find(f => f.RC_number === item.CARDNO);
+
+    // Match in family members
+    if (!match && query && familyObj && familyObj.members) {
+      const found = familyObj.members.find(m =>
+        m.member_name && m.member_name.toLowerCase().includes(query)
+      );
+      if (found) {
+        match = true;
+        matchedMember = found.member_name;
+      }
+    }
+
+    // ✅ Age filter: only include families where ALL members are 65+
+    if (!familyObj || !familyObj.members || !familyObj.members.length) return null;
+    const allAbove65 = familyObj.members.every(m => {
+      const age = parseInt(m.age, 10);
+      return !isNaN(age) && age >= 65;
+    });
+    if (!allAbove65) return null;
+
+    return match ? { ...item, status, matchedMember } : null;
+  }).filter(Boolean);
+
+  if (!results.length) {
+    tbody.innerHTML = '<tr><td colspan="4" class="text-center">No results found.</td></tr>';
+  } else {
+    results.forEach(item => {
+      const color = item.status.toLowerCase() === 'done' ? 'green' : 'red';
+
+      const familyDisplay = item.matchedMember
+        ? `${item['HEAD OF THE FAMILY']} <br><small>(Matched: ${item.matchedMember})</small>`
+        : item['HEAD OF THE FAMILY'];
+
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td><a href="https://aepos.ap.gov.in/Qcodesearch.jsp?rcno=${item.CARDNO}" target="_blank">${item.CARDNO}</a></td>
+        <td><a onclick="showFamily('${item.CARDNO}', '${item['HEAD OF THE FAMILY']}')">${familyDisplay}</a></td>
+        <td>${item.UNITS}</td>
+        <td style="color:${color}; font-weight:bold;">${item.status}</td>
+      `;
+      tbody.appendChild(row);
+    });
+  }
+
+  document.getElementById('resultsTable').style.display = 'table';
+}
+
+function showFamily(cardNo, headName) {
+  const familyObj = familyData.find(f => f.RC_number === cardNo);
+  const tbody = document.getElementById('familyDetails');
+  tbody.innerHTML = '';
+
+  if (!familyObj || !familyObj.members || !familyObj.members.length) {
+    tbody.innerHTML = `<tr><td colspan="4" class="text-center">No family data found.</td></tr>`;
+  } else {
+    familyObj.members.forEach(member => {
+      tbody.innerHTML += `
+        <tr>
+          <td>${member.member_name}</td>
+          <td>${member.age || '-'}</td>
+          <td>${member.relation || '-'}</td>
+          <td>${member.gender || '-'}</td>
+        </tr>
+      `;
+    });
+  }
+
+  const displayHead = familyObj && familyObj.head_of_family ? familyObj.head_of_family : headName;
+  document.getElementById('familyModalLabel').innerText = `Family Details - ${displayHead} (${cardNo})`;
+  const modal = new bootstrap.Modal(document.getElementById('familyModal'));
+  modal.show();
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
