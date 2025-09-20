@@ -10,6 +10,7 @@
     body { padding: 20px; }
     a { color: #0d6efd; text-decoration: none; cursor: pointer; }
     a:hover { text-decoration: underline; }
+    small { color: #6c757d; }
   </style>
 </head>
 <body>
@@ -26,7 +27,7 @@
       <thead class="table-light">
         <tr>
           <th>CARDNO</th>
-          <th>HEAD OF THE FAMILY</th>
+          <th>HEAD OF THE FAMILY / MATCHED MEMBER</th>
           <th>UNITS</th>
           <th>TRANSACTION STATUS</th>
         </tr>
@@ -110,42 +111,51 @@ function filterResults() {
 
   if (!jsonData.length) return;
 
-  const results = jsonData.filter(item => {
+  const results = jsonData.map(item => {
     const trnsItem = trnsData.find(t => t.CARDNO === item.CARDNO);
     const status = trnsItem ? trnsItem.transaction_status : 'No';
 
-    // Match in card data
+    // Default match
     let match = item.CARDNO.toLowerCase().includes(query) ||
                 item['HEAD OF THE FAMILY'].toLowerCase().includes(query) ||
                 status.toLowerCase().includes(query);
+
+    let matchedMember = null;
 
     // Match in family data -> member_name only
     if (!match && query) {
       const familyObj = familyData.find(f => f.RC_number === item.CARDNO);
       if (familyObj && familyObj.members) {
-        match = familyObj.members.some(m =>
+        const found = familyObj.members.find(m =>
           m.member_name && m.member_name.toLowerCase().includes(query)
         );
+        if (found) {
+          match = true;
+          matchedMember = found.member_name;
+        }
       }
     }
 
-    return match;
-  });
+    return match ? { ...item, status, matchedMember } : null;
+  }).filter(Boolean);
 
   if (!results.length) {
     tbody.innerHTML = '<tr><td colspan="4" class="text-center">No results found.</td></tr>';
   } else {
     results.forEach(item => {
-      const trnsItem = trnsData.find(t => t.CARDNO === item.CARDNO);
-      const status = trnsItem ? trnsItem.transaction_status : 'No';
-      const color = status.toLowerCase() === 'done' ? 'green' : 'red';
+      const color = item.status.toLowerCase() === 'done' ? 'green' : 'red';
+
+      // If search matched a member_name, show it alongside head
+      const familyDisplay = item.matchedMember
+        ? `${item['HEAD OF THE FAMILY']} <br><small>(Matched: ${item.matchedMember})</small>`
+        : item['HEAD OF THE FAMILY'];
 
       const row = document.createElement('tr');
       row.innerHTML = `
         <td><a href="https://aepos.ap.gov.in/Qcodesearch.jsp?rcno=${item.CARDNO}" target="_blank">${item.CARDNO}</a></td>
-        <td><a onclick="showFamily('${item.CARDNO}', '${item['HEAD OF THE FAMILY']}')">${item['HEAD OF THE FAMILY']}</a></td>
+        <td><a onclick="showFamily('${item.CARDNO}', '${item['HEAD OF THE FAMILY']}')">${familyDisplay}</a></td>
         <td>${item.UNITS}</td>
-        <td style="color:${color}; font-weight:bold;">${status}</td>
+        <td style="color:${color}; font-weight:bold;">${item.status}</td>
       `;
       tbody.appendChild(row);
     });
