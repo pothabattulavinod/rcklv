@@ -8,8 +8,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body { padding: 20px; }
-    a { color: #0d6efd; text-decoration: none; }
-    a:hover { text-decoration: underline; cursor: pointer; }
+    a { color: #0d6efd; text-decoration: none; cursor: pointer; }
+    a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -129,7 +129,7 @@ function filterResults() {
       const row = document.createElement('tr');
       row.innerHTML = `
         <td><a href="https://aepos.ap.gov.in/Qcodesearch.jsp?rcno=${item.CARDNO}" target="_blank">${item.CARDNO}</a></td>
-        <td><a href="#" onclick="showFamily('${item.CARDNO}', '${item['HEAD OF THE FAMILY']}')">${item['HEAD OF THE FAMILY']}</a></td>
+        <td><a onclick="showFamily('${item.CARDNO}', '${item['HEAD OF THE FAMILY']}')">${item['HEAD OF THE FAMILY']}</a></td>
         <td>${item.UNITS}</td>
         <td style="color:${color}; font-weight:bold;">${status}</td>
       `;
@@ -141,26 +141,30 @@ function filterResults() {
 }
 
 function showFamily(cardNo, headName) {
-  const family = familyData.filter(f => f.CARDNO === cardNo);
+  // Find the family object from updated JSONs (RC_number matches CARDNO)
+  const familyObj = familyData.find(f => f.RC_number === cardNo);
   const tbody = document.getElementById('familyDetails');
   tbody.innerHTML = '';
 
-  if (!family.length) {
+  if (!familyObj || !familyObj.members || !familyObj.members.length) {
     tbody.innerHTML = `<tr><td colspan="4" class="text-center">No family data found.</td></tr>`;
   } else {
-    family.forEach(member => {
+    familyObj.members.forEach(member => {
       tbody.innerHTML += `
         <tr>
-          <td>${member.NAME}</td>
-          <td>${member.AGE || '-'}</td>
-          <td>${member.RELATION || '-'}</td>
-          <td>${member.GENDER || '-'}</td>
+          <td>${member.member_name}</td>
+          <td>${member.age || '-'}</td>
+          <td>${member.relation || '-'}</td>
+          <td>${member.gender || '-'}</td>
         </tr>
       `;
     });
   }
 
-  document.getElementById('familyModalLabel').innerText = `Family Details - ${headName} (${cardNo})`;
+  // Prefer head_of_family from updated JSON if available
+  const displayHead = familyObj && familyObj.head_of_family ? familyObj.head_of_family : headName;
+
+  document.getElementById('familyModalLabel').innerText = `Family Details - ${displayHead} (${cardNo})`;
   const modal = new bootstrap.Modal(document.getElementById('familyModal'));
   modal.show();
 }
