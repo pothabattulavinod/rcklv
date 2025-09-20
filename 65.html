@@ -26,6 +26,7 @@
     <table id="resultsTable" class="table table-bordered table-striped" style="display:none;">
       <thead class="table-light">
         <tr>
+          <th>S.No.</th> <!-- Serial Number Column -->
           <th>CARDNO</th>
           <th>HEAD OF THE FAMILY / MATCHED MEMBER</th>
           <th>UNITS</th>
@@ -135,7 +136,7 @@ function filterResults() {
       }
     }
 
-    // ✅ Age filter: only include families where ALL members are 65+
+    // Age filter: only include families where ALL members are 65+
     if (!familyObj || !familyObj.members || !familyObj.members.length) return null;
     const allAbove65 = familyObj.members.every(m => {
       const age = parseInt(m.age, 10);
@@ -147,9 +148,9 @@ function filterResults() {
   }).filter(Boolean);
 
   if (!results.length) {
-    tbody.innerHTML = '<tr><td colspan="4" class="text-center">No results found.</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="5" class="text-center">No results found.</td></tr>';
   } else {
-    results.forEach(item => {
+    results.forEach((item, index) => {
       const color = item.status.toLowerCase() === 'done' ? 'green' : 'red';
 
       const familyDisplay = item.matchedMember
@@ -158,6 +159,7 @@ function filterResults() {
 
       const row = document.createElement('tr');
       row.innerHTML = `
+        <td>${index + 1}</td> <!-- Serial Number -->
         <td><a href="https://aepos.ap.gov.in/Qcodesearch.jsp?rcno=${item.CARDNO}" target="_blank">${item.CARDNO}</a></td>
         <td><a onclick="showFamily('${item.CARDNO}', '${item['HEAD OF THE FAMILY']}')">${familyDisplay}</a></td>
         <td>${item.UNITS}</td>
