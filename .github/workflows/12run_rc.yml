@@ -57,7 +57,7 @@ jobs:
 
           # Update remote URL to use PAT
           git remote remove origin
-          git remote add origin https://x-access-token:${GH_PAT}@github.com/pothabattulavinod/mer.git
+          git remote add origin https://x-access-token:${GH_PAT}@github.com/pothabattulavinod/rcklv.git
 
           # Push current branch to main
           git push origin HEAD:main
