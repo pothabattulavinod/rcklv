@@ -1,0 +1,61 @@
+name: RC 40 Update Check
+
+on:
+  workflow_dispatch:   # manual trigger only
+
+jobs:
+  run-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false   # we’ll use PAT for push
+          fetch-depth: 0
+
+      # 2. Set up Python
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4
+
+      # 4. Run the RC transaction script
+      - name: Run RC transaction script
+        run: python update_transactions40.py
+
+      # 5. Commit and push results using GH_PAT
+      - name: Commit and push results
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          # Configure Git
+          git config --global user.name "pothabattulavinod"
+          git config --global user.email "vinodyadavpothabattula666@gmail.com"
+
+          # Ensure JSON file exists (in case script fails)
+          if [ ! -s 40trns_current.json ]; then
+            echo '{"transactions":[]}' > 40trns_current.json
+          fi
+
+          # Stage the file
+          git add 40trns_current.json
+
+          # Commit if there are changes
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "Auto update RC transaction results [skip ci]"
+          else
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          # Push using PAT
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/pothabattulavinod/mer.git
+          git push origin HEAD:main
