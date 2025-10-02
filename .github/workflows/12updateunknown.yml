@@ -42,7 +42,7 @@ jobs:
           git add 12trns_current.json
           if ! git diff-index --quiet HEAD; then
             git commit -m "Auto update RC transaction results [skip ci]"
-            git remote set-url origin https://x-access-token:${GH_PAT}@github.com/pothabattulavinod/mer.git
+            git remote set-url origin https://x-access-token:${GH_PAT}@github.com/pothabattulavinod/rcklv.git
             git push origin HEAD:main
           else
             echo "No changes to commit"
