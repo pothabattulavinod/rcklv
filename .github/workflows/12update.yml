@@ -57,5 +57,5 @@ jobs:
           fi
 
           # Push using PAT
-          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/pothabattulavinod/mer.git
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/pothabattulavinod/rcklv.git
           git push origin HEAD:main
