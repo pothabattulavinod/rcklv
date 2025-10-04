@@ -797,7 +797,7 @@
     {
         "CARDNO": "2813906058",
         "HEAD OF THE FAMILY": "Challa Naga Sravani",
-        "transaction_status": "Unknown"
+        "transaction_status": "Not Done"
     },
     {
         "CARDNO": "2813355506",
@@ -2252,7 +2252,7 @@
     {
         "CARDNO": "2815229055",
         "HEAD OF THE FAMILY": "Anantharapu Chinna Sattiyya",
-        "transaction_status": "Unknown"
+        "transaction_status": "Done"
     },
     {
         "CARDNO": "2814017115",
