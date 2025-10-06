@@ -447,7 +447,7 @@
     {
         "CARDNO": "2801518878",
         "HEAD OF THE FAMILY": "Shek Phathima Bibi",
-        "transaction_status": "Unknown"
+        "transaction_status": "Not Done"
     },
     {
         "CARDNO": "2804227791",
@@ -457,7 +457,7 @@
     {
         "CARDNO": "2809352472",
         "HEAD OF THE FAMILY": "Challa Apparao",
-        "transaction_status": "Unknown"
+        "transaction_status": "Not Done"
     },
     {
         "CARDNO": "2817660240",
@@ -707,7 +707,7 @@
     {
         "CARDNO": "2800330963",
         "HEAD OF THE FAMILY": "Bonagiri Lakshmi",
-        "transaction_status": "Unknown"
+        "transaction_status": "Done"
     },
     {
         "CARDNO": "2810061780",
@@ -1062,7 +1062,7 @@
     {
         "CARDNO": "2819211581",
         "HEAD OF THE FAMILY": "Thelu Veera Venkata Durga Rao",
-        "transaction_status": "Unknown"
+        "transaction_status": "Not Done"
     },
     {
         "CARDNO": "2819217295",
@@ -1897,7 +1897,7 @@
     {
         "CARDNO": "2802406977",
         "HEAD OF THE FAMILY": "Konda Venkata Lakshmi",
-        "transaction_status": "Unknown"
+        "transaction_status": "Not Done"
     },
     {
         "CARDNO": "2803115853",
