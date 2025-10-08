@@ -117,7 +117,7 @@
     {
         "CARDNO": "2822035154",
         "HEAD OF THE FAMILY": "Ganapatiraju Lakshmi",
-        "transaction_status": "Not Done"
+        "transaction_status": "Unknown"
     },
     {
         "CARDNO": "2816344748",
@@ -147,7 +147,7 @@
     {
         "CARDNO": "2809260992",
         "HEAD OF THE FAMILY": "Mingi Vishnu Chakram",
-        "transaction_status": "Not Done"
+        "transaction_status": "Done"
     },
     {
         "CARDNO": "2808206767",
@@ -172,12 +172,12 @@
     {
         "CARDNO": "2816232995",
         "HEAD OF THE FAMILY": "Bupathiraju Satyanarayana Raju",
-        "transaction_status": "Not Done"
+        "transaction_status": "Unknown"
     },
     {
         "CARDNO": "2800894841",
         "HEAD OF THE FAMILY": "Pasupuleti Bhapiraju",
-        "transaction_status": "Not Done"
+        "transaction_status": "Done"
     },
     {
         "CARDNO": "2802530473",
@@ -187,7 +187,7 @@
     {
         "CARDNO": "2819270055",
         "HEAD OF THE FAMILY": "Adham Anantha Laxmi",
-        "transaction_status": "Not Done"
+        "transaction_status": "Done"
     },
     {
         "CARDNO": "2820619029",
@@ -222,7 +222,7 @@
     {
         "CARDNO": "2816187728",
         "HEAD OF THE FAMILY": "Pasupuleti Raghava",
-        "transaction_status": "Not Done"
+        "transaction_status": "Done"
     },
     {
         "CARDNO": "2816537947",
@@ -257,7 +257,7 @@
     {
         "CARDNO": "2819150133",
         "HEAD OF THE FAMILY": "Ganapathiraju Subhadra Devi",
-        "transaction_status": "Not Done"
+        "transaction_status": "Unknown"
     },
     {
         "CARDNO": "2818510844",
@@ -452,7 +452,7 @@
     {
         "CARDNO": "2800757264",
         "HEAD OF THE FAMILY": "Jonnada Lakshmi Devi",
-        "transaction_status": "Not Done"
+        "transaction_status": "Done"
     },
     {
         "CARDNO": "2811957719",
@@ -537,7 +537,7 @@
     {
         "CARDNO": "2819103449",
         "HEAD OF THE FAMILY": "Pasupuleti Satyavathi",
-        "transaction_status": "Not Done"
+        "transaction_status": "Unknown"
     },
     {
         "CARDNO": "2818669873",
@@ -777,7 +777,7 @@
     {
         "CARDNO": "2813305718",
         "HEAD OF THE FAMILY": "Challa Anantalakshmi",
-        "transaction_status": "Not Done"
+        "transaction_status": "Done"
     },
     {
         "CARDNO": "2800388430",
@@ -877,12 +877,12 @@
     {
         "CARDNO": "2822087494",
         "HEAD OF THE FAMILY": "Pasupuleti Vijaya Laxmi",
-        "transaction_status": "Not Done"
+        "transaction_status": "Done"
     },
     {
         "CARDNO": "2820381281",
         "HEAD OF THE FAMILY": "Sangitha Devi",
-        "transaction_status": "Not Done"
+        "transaction_status": "Unknown"
     },
     {
         "CARDNO": "2810662143",
@@ -1002,7 +1002,7 @@
     {
         "CARDNO": "2809655033",
         "HEAD OF THE FAMILY": "Chaganti Shanti",
-        "transaction_status": "Not Done"
+        "transaction_status": "Done"
     },
     {
         "CARDNO": "2806893576",
@@ -1017,12 +1017,12 @@
     {
         "CARDNO": "2800128988",
         "HEAD OF THE FAMILY": "Sangita Veera Prabha",
-        "transaction_status": "Not Done"
+        "transaction_status": "Unknown"
     },
     {
         "CARDNO": "2808085568",
         "HEAD OF THE FAMILY": "Nookathatti Srikanya",
-        "transaction_status": "Not Done"
+        "transaction_status": "Done"
     },
     {
         "CARDNO": "2815461647",
@@ -1097,7 +1097,7 @@
     {
         "CARDNO": "2805343295",
         "HEAD OF THE FAMILY": "Mopati Manga",
-        "transaction_status": "Not Done"
+        "transaction_status": "Done"
     },
     {
         "CARDNO": "2810344378",
@@ -1107,7 +1107,7 @@
     {
         "CARDNO": "2817042485",
         "HEAD OF THE FAMILY": "Udi Satyavathi",
-        "transaction_status": "Not Done"
+        "transaction_status": "Unknown"
     },
     {
         "CARDNO": "2809067709",
@@ -1212,7 +1212,7 @@
     {
         "CARDNO": "2809336354",
         "HEAD OF THE FAMILY": "Pedhapati Misamma",
-        "transaction_status": "Not Done"
+        "transaction_status": "Done"
     },
     {
         "CARDNO": "2802384128",
@@ -1227,7 +1227,7 @@
     {
         "CARDNO": "2810202086",
         "HEAD OF THE FAMILY": "Eendru Veeralakshmi",
-        "transaction_status": "Not Done"
+        "transaction_status": "Done"
     },
     {
         "CARDNO": "2802214255",
@@ -1247,12 +1247,12 @@
     {
         "CARDNO": "2803664496",
         "HEAD OF THE FAMILY": "Dasari Venkatalakshmi",
-        "transaction_status": "Not Done"
+        "transaction_status": "Done"
     },
     {
         "CARDNO": "2814496473",
         "HEAD OF THE FAMILY": "Kovvada Mariyamma",
-        "transaction_status": "Not Done"
+        "transaction_status": "Done"
     },
     {
         "CARDNO": "2819107705",
@@ -2562,7 +2562,7 @@
     {
         "CARDNO": "2810325542",
         "HEAD OF THE FAMILY": "Chinta Varalakshmi",
-        "transaction_status": "Not Done"
+        "transaction_status": "Done"
     },
     {
         "CARDNO": "2808942672",
