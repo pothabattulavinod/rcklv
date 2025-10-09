@@ -102,7 +102,7 @@
     {
         "CARDNO": "2819128769",
         "HEAD OF THE FAMILY": "Prasanna",
-        "transaction_status": "Unknown"
+        "transaction_status": "Not Done"
     },
     {
         "CARDNO": "2819196040",
@@ -362,7 +362,7 @@
     {
         "CARDNO": "2805694496",
         "HEAD OF THE FAMILY": "Matha Parvathi",
-        "transaction_status": "Unknown"
+        "transaction_status": "Not Done"
     },
     {
         "CARDNO": "2804846407",
@@ -1327,7 +1327,7 @@
     {
         "CARDNO": "2813911830",
         "HEAD OF THE FAMILY": "Mandela Dhana Lakshmi",
-        "transaction_status": "Unknown"
+        "transaction_status": "Not Done"
     },
     {
         "CARDNO": "2815696590",
@@ -1602,7 +1602,7 @@
     {
         "CARDNO": "2805623773",
         "HEAD OF THE FAMILY": "Madaka Ratnam",
-        "transaction_status": "Unknown"
+        "transaction_status": "Not Done"
     },
     {
         "CARDNO": "2819260679",
@@ -1632,7 +1632,7 @@
     {
         "CARDNO": "2813929869",
         "HEAD OF THE FAMILY": "Gangumalla Varalakshmi",
-        "transaction_status": "Unknown"
+        "transaction_status": "Not Done"
     },
     {
         "CARDNO": "2806360985",
@@ -1752,7 +1752,7 @@
     {
         "CARDNO": "2814744080",
         "HEAD OF THE FAMILY": "Chintha Kumari",
-        "transaction_status": "Unknown"
+        "transaction_status": "Not Done"
     },
     {
         "CARDNO": "2808287518",
@@ -1907,7 +1907,7 @@
     {
         "CARDNO": "2812349495",
         "HEAD OF THE FAMILY": "Pithani Ragava",
-        "transaction_status": "Unknown"
+        "transaction_status": "Done"
     },
     {
         "CARDNO": "2818223626",
