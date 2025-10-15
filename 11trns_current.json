@@ -342,7 +342,7 @@
     {
         "CARDNO": "2821831067",
         "HEAD OF THE FAMILY": "Bommothu Syam Babu",
-        "transaction_status": "Unknown"
+        "transaction_status": "Not Done"
     },
     {
         "CARDNO": "2805040285",
@@ -677,7 +677,7 @@
     {
         "CARDNO": "2802063543",
         "HEAD OF THE FAMILY": "Pasupuleti Venkata Lakshmi",
-        "transaction_status": "Unknown"
+        "transaction_status": "Not Done"
     },
     {
         "CARDNO": "2819293846",
@@ -772,7 +772,7 @@
     {
         "CARDNO": "2816959195",
         "HEAD OF THE FAMILY": "Chinthalapati Annapurna",
-        "transaction_status": "Unknown"
+        "transaction_status": "Not Done"
     },
     {
         "CARDNO": "2813305718",
@@ -832,7 +832,7 @@
     {
         "CARDNO": "2821069797",
         "HEAD OF THE FAMILY": "Koka Kasi Viswanadham",
-        "transaction_status": "Unknown"
+        "transaction_status": "Not Done"
     },
     {
         "CARDNO": "2805751299",
@@ -1607,7 +1607,7 @@
     {
         "CARDNO": "2804543178",
         "HEAD OF THE FAMILY": "Pilla Varalakshmi",
-        "transaction_status": "Not Done"
+        "transaction_status": "Unknown"
     },
     {
         "CARDNO": "2819120143",
@@ -1657,7 +1657,7 @@
     {
         "CARDNO": "2814700821",
         "HEAD OF THE FAMILY": "Dasari Anusha",
-        "transaction_status": "Not Done"
+        "transaction_status": "Unknown"
     },
     {
         "CARDNO": "2806243953",
@@ -1672,7 +1672,7 @@
     {
         "CARDNO": "2807413852",
         "HEAD OF THE FAMILY": "Koyya Sitamma",
-        "transaction_status": "Not Done"
+        "transaction_status": "Unknown"
     },
     {
         "CARDNO": "2808139487",
@@ -1687,7 +1687,7 @@
     {
         "CARDNO": "2809878369",
         "HEAD OF THE FAMILY": "PEDIREDDI RAMANAMMA",
-        "transaction_status": "Unknown"
+        "transaction_status": "Done"
     },
     {
         "CARDNO": "2808998532",
@@ -1787,7 +1787,7 @@
     {
         "CARDNO": "2821576878",
         "HEAD OF THE FAMILY": "Pilla Kanaka Laxmi",
-        "transaction_status": "Unknown"
+        "transaction_status": "Not Done"
     },
     {
         "CARDNO": "2810757135",
@@ -2087,7 +2087,7 @@
     {
         "CARDNO": "2802698229",
         "HEAD OF THE FAMILY": "Pilla Appayamma",
-        "transaction_status": "Not Done"
+        "transaction_status": "Unknown"
     },
     {
         "CARDNO": "2814199164",
@@ -2307,7 +2307,7 @@
     {
         "CARDNO": "2819392741",
         "HEAD OF THE FAMILY": "Anduboyina Sri Padma",
-        "transaction_status": "Unknown"
+        "transaction_status": "Not Done"
     },
     {
         "CARDNO": "2812463508",
@@ -2517,12 +2517,12 @@
     {
         "CARDNO": "2820430009",
         "HEAD OF THE FAMILY": "Pasupuleti Anitha",
-        "transaction_status": "Not Done"
+        "transaction_status": "Unknown"
     },
     {
         "CARDNO": "2819152029",
         "HEAD OF THE FAMILY": "Pithani Krishnaveni",
-        "transaction_status": "Unknown"
+        "transaction_status": "Not Done"
     },
     {
         "CARDNO": "2817954917",
