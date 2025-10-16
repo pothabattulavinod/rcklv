@@ -8,7 +8,7 @@ import os
 
 # Input and output files
 input_file = "11trns_current.json"
-output_file = "11trns_recheck.json"
+output_file = "11trns_current.json"
 
 # Load previous results
 if not os.path.exists(input_file):
