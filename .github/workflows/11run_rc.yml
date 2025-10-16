@@ -29,7 +29,7 @@ jobs:
 
       # 4. Run the RC transaction script
       - name: Run RC transaction script
-        run: python check_transactions11.py
+        run: python fricemiss.py
 
       # 5. Commit and push results using GH_PAT
       - name: Commit and push results
