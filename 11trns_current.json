@@ -2,17 +2,17 @@
     {
         "CARDNO": "2822185062",
         "HEAD OF THE FAMILY": "Pilli Sukanya",
-        "transaction_status": "Done"
+        "transaction_status": "Unknown"
     },
     {
         "CARDNO": "2822192514",
         "HEAD OF THE FAMILY": "Arava Rohini",
-        "transaction_status": "Done"
+        "transaction_status": "Unknown"
     },
     {
         "CARDNO": "2810209729",
         "HEAD OF THE FAMILY": "Thummuri Karuna",
-        "transaction_status": "Done"
+        "transaction_status": "Unknown"
     },
     {
         "CARDNO": "2822237797",
@@ -39,7 +39,7 @@
     {
         "CARDNO": "2802711263",
         "HEAD OF THE FAMILY": "Ayinavelli Padmavathi",
-        "transaction_status": "Done"
+        "transaction_status": "Unknown"
     },
     {
         "CARDNO": "2803406603",
@@ -344,7 +344,7 @@
     {
         "CARDNO": "2821831067",
         "HEAD OF THE FAMILY": "Bommothu Syam Babu",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
