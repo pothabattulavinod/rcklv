@@ -29,7 +29,7 @@ jobs:
 
       # 4. Run the RC transaction script
       - name: Run RC transaction script
-        run: python updatefrice.py
+        run: python updatefrice11.py
 
       # 5. Commit and push results using GH_PAT
       - name: Commit and push results
