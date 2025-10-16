@@ -686,8 +686,8 @@
     {
         "CARDNO": "2802063543",
         "HEAD OF THE FAMILY": "Pasupuleti Venkata Lakshmi",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "5.000"
     },
     {
         "CARDNO": "2819293846",
