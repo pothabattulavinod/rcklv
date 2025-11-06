@@ -3050,8 +3050,8 @@
     {
         "CARDNO": "2810780450",
         "HEAD OF THE FAMILY": "Aripaka Kumari",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "10.000"
     },
     {
         "CARDNO": "2820689165",
