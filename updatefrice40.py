@@ -7,8 +7,8 @@ import re
 import os
 
 # Input and output file paths
-input_file = "12trns_current.json"
-output_file = "12trns_current.json"
+input_file = "40trns_current.json"
+output_file = "40trns_current.json"
 
 # Load previous results
 if not os.path.exists(input_file):
