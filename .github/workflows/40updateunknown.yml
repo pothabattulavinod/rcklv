@@ -29,7 +29,7 @@ jobs:
 
       # 4. Run script
       - name: Run RC transaction script
-        run: python unknown_transactions40.py
+        run: python unknownfrice40.py
 
       # 5. Commit & push results
       - name: Commit and push results
