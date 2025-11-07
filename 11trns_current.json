@@ -506,7 +506,7 @@
     {
         "CARDNO": "2801977083",
         "HEAD OF THE FAMILY": "Pasupuleti Satyanarayana",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -770,7 +770,7 @@
     {
         "CARDNO": "2801779199",
         "HEAD OF THE FAMILY": "Dasari Baby",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -1052,7 +1052,7 @@
     {
         "CARDNO": "2820381281",
         "HEAD OF THE FAMILY": "Sangitha Devi",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -1106,7 +1106,7 @@
     {
         "CARDNO": "2806297445",
         "HEAD OF THE FAMILY": "Pasupuleti Ganga",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -1202,7 +1202,7 @@
     {
         "CARDNO": "2809655033",
         "HEAD OF THE FAMILY": "Chaganti Shanti",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -1274,13 +1274,13 @@
     {
         "CARDNO": "2816243898",
         "HEAD OF THE FAMILY": "Medapati Surya Kumari",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
         "CARDNO": "2809432504",
         "HEAD OF THE FAMILY": "Bommothu Rajesh",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -1406,7 +1406,7 @@
     {
         "CARDNO": "2803521897",
         "HEAD OF THE FAMILY": "Ganapatiraju Kasi Viswanadharaju",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -1694,7 +1694,7 @@
     {
         "CARDNO": "2809309822",
         "HEAD OF THE FAMILY": "Osetti Manga",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -2834,7 +2834,7 @@
     {
         "CARDNO": "2804367759",
         "HEAD OF THE FAMILY": "Anduboina",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -3038,7 +3038,7 @@
     {
         "CARDNO": "2817516228",
         "HEAD OF THE FAMILY": "Koparthi Talupulamma",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
