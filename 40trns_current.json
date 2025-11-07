@@ -716,7 +716,7 @@
     {
         "CARDNO": "2815544685",
         "HEAD OF THE FAMILY": "Thorati Satyavathi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -734,7 +734,7 @@
     {
         "CARDNO": "2806520606",
         "HEAD OF THE FAMILY": "Sabbu Chitti Rani",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1088,7 +1088,7 @@
     {
         "CARDNO": "2809046844",
         "HEAD OF THE FAMILY": "Challa Laxmi Jyothi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
