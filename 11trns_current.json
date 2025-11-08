@@ -1112,8 +1112,8 @@
     {
         "CARDNO": "2810474980",
         "HEAD OF THE FAMILY": "Kopparthi Jayalakshmi",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2817327922",
@@ -1382,7 +1382,7 @@
     {
         "CARDNO": "2820533040",
         "HEAD OF THE FAMILY": "Ganapathiraju Akshara",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
