@@ -2420,8 +2420,8 @@
     {
         "CARDNO": "2816595962",
         "HEAD OF THE FAMILY": "Thokada Suryakantham",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "5.000"
     },
     {
         "CARDNO": "2810479736",
