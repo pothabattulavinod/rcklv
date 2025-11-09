@@ -542,7 +542,7 @@
     {
         "CARDNO": "2808216818",
         "HEAD OF THE FAMILY": "Kurudu Venkata Padma",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -968,7 +968,7 @@
     {
         "CARDNO": "2814501616",
         "HEAD OF THE FAMILY": "Pithani Bhavani",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -986,7 +986,7 @@
     {
         "CARDNO": "2814557466",
         "HEAD OF THE FAMILY": "Tanniru Raghavamma",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1070,7 +1070,7 @@
     {
         "CARDNO": "2807412873",
         "HEAD OF THE FAMILY": "Datla Venkata Subbaraju",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1514,7 +1514,7 @@
     {
         "CARDNO": "2811743845",
         "HEAD OF THE FAMILY": "Aadham Rajya Lakshmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
