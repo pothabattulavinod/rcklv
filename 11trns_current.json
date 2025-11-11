@@ -326,8 +326,8 @@
     {
         "CARDNO": "2819150133",
         "HEAD OF THE FAMILY": "Ganapathiraju Subhadra Devi",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2818510844",
@@ -548,8 +548,8 @@
     {
         "CARDNO": "2811957719",
         "HEAD OF THE FAMILY": "Dakarapu Surya Narayana",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "5.000"
     },
     {
         "CARDNO": "2813643319",
@@ -770,8 +770,8 @@
     {
         "CARDNO": "2801779199",
         "HEAD OF THE FAMILY": "Dasari Baby",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "10.000"
     },
     {
         "CARDNO": "2821532733",
@@ -860,8 +860,8 @@
     {
         "CARDNO": "2805056528",
         "HEAD OF THE FAMILY": "Arava Sitha",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "5.000"
     },
     {
         "CARDNO": "2808983937",
@@ -890,8 +890,8 @@
     {
         "CARDNO": "2810569212",
         "HEAD OF THE FAMILY": "Pasupuleti Sita Ratnam",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "5.000"
     },
     {
         "CARDNO": "2809142765",
@@ -2084,7 +2084,7 @@
     {
         "CARDNO": "2811009621",
         "HEAD OF THE FAMILY": "Tadipudi Aruna Kumari",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -2756,8 +2756,8 @@
     {
         "CARDNO": "2803192360",
         "HEAD OF THE FAMILY": "Pilla Uma Devi",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "15.000"
     },
     {
         "CARDNO": "2805086390",
