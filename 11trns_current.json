@@ -2090,8 +2090,8 @@
     {
         "CARDNO": "2814230810",
         "HEAD OF THE FAMILY": "Peddireddy Devi",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2801280987",
@@ -2480,8 +2480,8 @@
     {
         "CARDNO": "2819182290",
         "HEAD OF THE FAMILY": "Pilli Durga Devi",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2815089527",
@@ -2516,8 +2516,8 @@
     {
         "CARDNO": "2817047295",
         "HEAD OF THE FAMILY": "Kondavalasa Manga",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "25.000"
     },
     {
         "CARDNO": "2806201853",
