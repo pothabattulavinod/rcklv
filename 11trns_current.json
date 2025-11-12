@@ -926,7 +926,7 @@
     {
         "CARDNO": "2812973911",
         "HEAD OF THE FAMILY": "Ganapathiraju Satyavathi Devi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1364,7 +1364,7 @@
     {
         "CARDNO": "2804828080",
         "HEAD OF THE FAMILY": "Kona Sai Durga",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1382,7 +1382,7 @@
     {
         "CARDNO": "2820533040",
         "HEAD OF THE FAMILY": "Ganapathiraju Akshara",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1760,8 +1760,8 @@
     {
         "CARDNO": "2804347677",
         "HEAD OF THE FAMILY": "Gokada Sudha",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "15.000"
     },
     {
         "CARDNO": "2806082638",
@@ -2162,7 +2162,7 @@
     {
         "CARDNO": "2821670127",
         "HEAD OF THE FAMILY": "Dasari Krishna",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2882,7 +2882,7 @@
     {
         "CARDNO": "2819196316",
         "HEAD OF THE FAMILY": "Konda Jhansi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
