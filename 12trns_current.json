@@ -1,4 +1,116 @@
 [
+   
+       {
+        "CARDNO": "2822586960",
+        "HEAD OF THE FAMILY": "Sangitha Kalyani Navya",
+        "transaction_status": "Not Done",
+        "Avail.Commodity": null
+    },
+    {
+        "CARDNO": "2822542180",
+        "HEAD OF THE FAMILY": "Dasari Sirisha",
+        "transaction_status": "Not Done",
+        "Avail.Commodity": null
+    },
+    {
+        "CARDNO": "2822587330",
+        "HEAD OF THE FAMILY": "Kurumalla Santha Kumari",
+        "transaction_status": "Not Done",
+        "Avail.Commodity": null
+    },
+    {
+        "CARDNO": "2822542178",
+        "HEAD OF THE FAMILY": "Yerni Lavanya",
+        "transaction_status": "Not Done",
+        "Avail.Commodity": null
+    },
+    {
+        "CARDNO": "2822486537",
+        "HEAD OF THE FAMILY": "Datla Satyavathi",
+        "transaction_status": "Not Done",
+        "Avail.Commodity": null
+    },
+    {
+        "CARDNO": "2822628645",
+        "HEAD OF THE FAMILY": "Tarra Naveena",
+        "transaction_status": "Not Done",
+        "Avail.Commodity": null
+    },
+    {
+        "CARDNO": "2822542179",
+        "HEAD OF THE FAMILY": "Bantu Ramya",
+        "transaction_status": "Not Done",
+        "Avail.Commodity": null
+    },
+    {
+        "CARDNO": "2822486531",
+        "HEAD OF THE FAMILY": "Kandhikatla Sudha",
+        "transaction_status": "Not Done",
+        "Avail.Commodity": null
+    },
+    {
+        "CARDNO": "2822632231",
+        "HEAD OF THE FAMILY": "Medisetti Prasanna Kavya",
+        "transaction_status": "Not Done",
+        "Avail.Commodity": null
+    },
+    {
+        "CARDNO": "2822652916",
+        "HEAD OF THE FAMILY": "Nanduri Laxmi",
+        "transaction_status": "Not Done",
+        "Avail.Commodity": null
+    },
+    {
+        "CARDNO": "2822586989",
+        "HEAD OF THE FAMILY": "Adimulam Shilpa",
+        "transaction_status": "Not Done",
+        "Avail.Commodity": null
+    },
+    {
+        "CARDNO": "2822618085",
+        "HEAD OF THE FAMILY": "Kokkiripati Sirisha",
+        "transaction_status": "Done",
+        "Avail.Commodity": "15.000"
+    },
+    {
+        "CARDNO": "2822575570",
+        "HEAD OF THE FAMILY": "Simma Anusha Devi",
+        "transaction_status": "Not Done",
+        "Avail.Commodity": null
+    },
+    {
+        "CARDNO": "2822486533",
+        "HEAD OF THE FAMILY": "Kalidindi Saroja",
+        "transaction_status": "Not Done",
+        "Avail.Commodity": null
+    },
+    {
+        "CARDNO": "2822632230",
+        "HEAD OF THE FAMILY": "Kanchumarthi RAMYA",
+        "transaction_status": "Not Done",
+        "Avail.Commodity": null
+    },
+    {
+        "CARDNO": "2822542175",
+        "HEAD OF THE FAMILY": "Abbisetti Vanitha",
+        "transaction_status": "Not Done",
+        "Avail.Commodity": null
+    },
+    {
+        "CARDNO": "2822618163",
+        "HEAD OF THE FAMILY": "Kona Sharon",
+        "transaction_status": "Unknown",
+        "Avail.Commodity": null
+    },
+    {
+        "CARDNO": "2822618087",
+        "HEAD OF THE FAMILY": "Naripireddy Padmavathi",
+        "transaction_status": "Unknown",
+        "Avail.Commodity": null
+    },  
+    
+    
+    
     {
         "CARDNO": "2822186251",
         "HEAD OF THE FAMILY": "Bandaru Veeralakshmi",
