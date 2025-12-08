@@ -410,7 +410,7 @@
     {
         "CARDNO": "2819150133",
         "HEAD OF THE FAMILY": "Ganapathiraju Subhadra Devi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1148,7 +1148,7 @@
     {
         "CARDNO": "2820381281",
         "HEAD OF THE FAMILY": "Sangitha Devi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1280,8 +1280,8 @@
     {
         "CARDNO": "2804950057",
         "HEAD OF THE FAMILY": "Sangitha Venkata Lakshmi",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2800912685",
@@ -2600,7 +2600,7 @@
     {
         "CARDNO": "2802698229",
         "HEAD OF THE FAMILY": "Pilla Appayamma",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
