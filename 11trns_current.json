@@ -44,7 +44,7 @@
     {
         "CARDNO": "2822486531",
         "HEAD OF THE FAMILY": "Kandhikatla Sudha",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -92,7 +92,7 @@
     {
         "CARDNO": "2822542175",
         "HEAD OF THE FAMILY": "Abbisetti Vanitha",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -296,7 +296,7 @@
     {
         "CARDNO": "2806223328",
         "HEAD OF THE FAMILY": "Pasupuleti Vijaya",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -746,13 +746,13 @@
     {
         "CARDNO": "2816634885",
         "HEAD OF THE FAMILY": "Kone Jayalaxmi",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "10.000"
     },
     {
         "CARDNO": "2818669873",
         "HEAD OF THE FAMILY": "Sangita Sitha",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -962,8 +962,8 @@
     {
         "CARDNO": "2805056528",
         "HEAD OF THE FAMILY": "Arava Sitha",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "5.000"
     },
     {
         "CARDNO": "2808983937",
@@ -1124,7 +1124,7 @@
     {
         "CARDNO": "2806236688",
         "HEAD OF THE FAMILY": "Yarra Durga",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1232,7 +1232,7 @@
     {
         "CARDNO": "2812717937",
         "HEAD OF THE FAMILY": "Arava Nagababu",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1298,7 +1298,7 @@
     {
         "CARDNO": "2809655033",
         "HEAD OF THE FAMILY": "Chaganti Shanti",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1388,7 +1388,7 @@
     {
         "CARDNO": "2809432504",
         "HEAD OF THE FAMILY": "Bommothu Rajesh",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1586,7 +1586,7 @@
     {
         "CARDNO": "2805013783",
         "HEAD OF THE FAMILY": "Chitturi Swathi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1670,7 +1670,7 @@
     {
         "CARDNO": "2813299947",
         "HEAD OF THE FAMILY": "Osetti Vishnu",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1760,7 +1760,7 @@
     {
         "CARDNO": "2803521897",
         "HEAD OF THE FAMILY": "Ganapatiraju Kasi Viswanadharaju",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1940,7 +1940,7 @@
     {
         "CARDNO": "2805920831",
         "HEAD OF THE FAMILY": "Yerni Mutyalamma",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2162,7 +2162,7 @@
     {
         "CARDNO": "2817726876",
         "HEAD OF THE FAMILY": "Peddireddy Maridamma",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2858,7 +2858,7 @@
     {
         "CARDNO": "2805086390",
         "HEAD OF THE FAMILY": "Mullapudi Nagamani",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -3182,7 +3182,7 @@
     {
         "CARDNO": "2810325542",
         "HEAD OF THE FAMILY": "Chinta Varalakshmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
