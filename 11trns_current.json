@@ -122,8 +122,8 @@
     {
         "CARDNO": "2821468707",
         "HEAD OF THE FAMILY": "Godavari Atchuta Ravi Krishna Mohan",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "5.000"
     },
     {
         "CARDNO": "2822192514",
@@ -236,8 +236,8 @@
     {
         "CARDNO": "2804648388",
         "HEAD OF THE FAMILY": "Betalapu Satyaveni",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2822035154",
@@ -926,8 +926,8 @@
     {
         "CARDNO": "2806868364",
         "HEAD OF THE FAMILY": "Purre Surya Durga",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2804190925",
