@@ -1154,8 +1154,8 @@
     {
         "CARDNO": "2811350331",
         "HEAD OF THE FAMILY": "Addala Suryanarayana",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "15.000"
     },
     {
         "CARDNO": "2813138305",
@@ -1286,8 +1286,8 @@
     {
         "CARDNO": "2814466246",
         "HEAD OF THE FAMILY": "Sade Durga",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "25.000"
     },
     {
         "CARDNO": "2809665703",
@@ -1382,7 +1382,7 @@
     {
         "CARDNO": "2817716473",
         "HEAD OF THE FAMILY": "Jalimi Muttamma",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
