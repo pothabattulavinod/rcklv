@@ -1022,8 +1022,8 @@
     {
         "CARDNO": "2800388430",
         "HEAD OF THE FAMILY": "Arava Chakra Veni",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2813305718",
@@ -1070,7 +1070,7 @@
     {
         "CARDNO": "2806836427",
         "HEAD OF THE FAMILY": "Thentu Bangaramma",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -2300,7 +2300,7 @@
     {
         "CARDNO": "2813896590",
         "HEAD OF THE FAMILY": "Sunkara Varalaxmi",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -2612,8 +2612,8 @@
     {
         "CARDNO": "2817047295",
         "HEAD OF THE FAMILY": "Kondavalasa Manga",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "25.000"
     },
     {
         "CARDNO": "2806201853",
@@ -3224,7 +3224,7 @@
     {
         "CARDNO": "2822032710",
         "HEAD OF THE FAMILY": "Konda Siva Durga Bhavani",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
