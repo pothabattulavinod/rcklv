@@ -1748,7 +1748,7 @@
     {
         "CARDNO": "2809108000",
         "HEAD OF THE FAMILY": "Matsa Sitayamma",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1910,7 +1910,7 @@
     {
         "CARDNO": "2820477659",
         "HEAD OF THE FAMILY": "Yallimi Durgavara Prasad",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2846,8 +2846,8 @@
     {
         "CARDNO": "2807319277",
         "HEAD OF THE FAMILY": "Nukatatti Rani",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2819248032",
