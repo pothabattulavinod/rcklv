@@ -764,8 +764,8 @@
     {
         "CARDNO": "2809650830",
         "HEAD OF THE FAMILY": "Pilli Krishnaveni",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "15.000"
     },
     {
         "CARDNO": "2820226349",
@@ -1712,7 +1712,7 @@
     {
         "CARDNO": "2812693390",
         "HEAD OF THE FAMILY": "Kuppala Venkata Laxmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
