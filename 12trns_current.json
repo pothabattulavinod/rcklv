@@ -92,7 +92,7 @@
     {
         "CARDNO": "2822542175",
         "HEAD OF THE FAMILY": "Abbisetti Vanitha",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1496,7 +1496,7 @@
     {
         "CARDNO": "2808820051",
         "HEAD OF THE FAMILY": "Gandham Merry",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1784,7 +1784,7 @@
     {
         "CARDNO": "2800825696",
         "HEAD OF THE FAMILY": "Gudeti Sarramma",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2528,7 +2528,7 @@
     {
         "CARDNO": "2802040338",
         "HEAD OF THE FAMILY": "Katakam Sarojani",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
