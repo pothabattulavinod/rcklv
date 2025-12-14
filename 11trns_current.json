@@ -1124,7 +1124,7 @@
     {
         "CARDNO": "2806236688",
         "HEAD OF THE FAMILY": "Yarra Durga",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1694,7 +1694,7 @@
     {
         "CARDNO": "2806152356",
         "HEAD OF THE FAMILY": "M Venkata Laxmi Alivelu Manga Tayaro",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2300,7 +2300,7 @@
     {
         "CARDNO": "2813896590",
         "HEAD OF THE FAMILY": "Sunkara Varalaxmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2834,7 +2834,7 @@
     {
         "CARDNO": "2810030686",
         "HEAD OF THE FAMILY": "Dasari Lakshmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
