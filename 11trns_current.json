@@ -2468,8 +2468,8 @@
     {
         "CARDNO": "2815021832",
         "HEAD OF THE FAMILY": "Ballireddy Manga",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "10.000"
     },
     {
         "CARDNO": "2816656029",
