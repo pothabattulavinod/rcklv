@@ -1328,7 +1328,7 @@
     {
         "CARDNO": "2813911830",
         "HEAD OF THE FAMILY": "Mandela Dhana Lakshmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1808,7 +1808,7 @@
     {
         "CARDNO": "2809992587",
         "HEAD OF THE FAMILY": "Abbireddy Satyavathi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2006,8 +2006,8 @@
     {
         "CARDNO": "2810841989",
         "HEAD OF THE FAMILY": "Pitha Venkata Laxmi",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2808619362",
