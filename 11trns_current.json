@@ -2672,8 +2672,8 @@
     {
         "CARDNO": "2810872258",
         "HEAD OF THE FAMILY": "Chodisetti Nagamani",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "15.000"
     },
     {
         "CARDNO": "2818593956",
