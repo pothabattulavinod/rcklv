@@ -224,7 +224,7 @@
     {
         "CARDNO": "2810031101",
         "HEAD OF THE FAMILY": "Pilli Adhi Lakshmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -974,7 +974,7 @@
     {
         "CARDNO": "2804135950",
         "HEAD OF THE FAMILY": "Kolluri Devi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
