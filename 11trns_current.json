@@ -440,7 +440,7 @@
     {
         "CARDNO": "2820863422",
         "HEAD OF THE FAMILY": "Dasari Sujatha",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -464,7 +464,7 @@
     {
         "CARDNO": "2811006225",
         "HEAD OF THE FAMILY": "Dude Venkata Ramana",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1130,7 +1130,7 @@
     {
         "CARDNO": "2815029504",
         "HEAD OF THE FAMILY": "Sangeetha Manga",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1502,7 +1502,7 @@
     {
         "CARDNO": "2820444126",
         "HEAD OF THE FAMILY": "Pilla Veera Satyaveni",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1754,7 +1754,7 @@
     {
         "CARDNO": "2804543178",
         "HEAD OF THE FAMILY": "Pilla Varalakshmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2102,7 +2102,7 @@
     {
         "CARDNO": "2807136703",
         "HEAD OF THE FAMILY": "Oodi Mallamma",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2246,8 +2246,8 @@
     {
         "CARDNO": "2811407887",
         "HEAD OF THE FAMILY": "Muchchakarla Ganga",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "5.000"
     },
     {
         "CARDNO": "2820422844",
@@ -2522,8 +2522,8 @@
     {
         "CARDNO": "2803192360",
         "HEAD OF THE FAMILY": "Pilla Uma Devi",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "15.000"
     },
     {
         "CARDNO": "2805086390",
@@ -2534,7 +2534,7 @@
     {
         "CARDNO": "2819392741",
         "HEAD OF THE FAMILY": "Anduboyina Sri Padma",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
