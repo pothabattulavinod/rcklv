@@ -62,7 +62,7 @@
     {
         "CARDNO": "2821530519",
         "HEAD OF THE FAMILY": "Ankabattula Lavanya",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -542,8 +542,8 @@
     {
         "CARDNO": "2810250475",
         "HEAD OF THE FAMILY": "Inti Durga",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2801380630",
@@ -620,8 +620,8 @@
     {
         "CARDNO": "2807859720",
         "HEAD OF THE FAMILY": "Yadla Sesharatnam",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "5.000"
     },
     {
         "CARDNO": "2800280887",
@@ -962,8 +962,8 @@
     {
         "CARDNO": "2810474980",
         "HEAD OF THE FAMILY": "Kopparthi Jayalakshmi",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2806297445",
@@ -1718,7 +1718,7 @@
     {
         "CARDNO": "2800323969",
         "HEAD OF THE FAMILY": "SEERAMSETTI NARSAMMA",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1754,8 +1754,8 @@
     {
         "CARDNO": "2804543178",
         "HEAD OF THE FAMILY": "Pilla Varalakshmi",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "15.000"
     },
     {
         "CARDNO": "2819120143",
@@ -2054,7 +2054,7 @@
     {
         "CARDNO": "2818234803",
         "HEAD OF THE FAMILY": "Tarra Lakshmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2414,8 +2414,8 @@
     {
         "CARDNO": "2815296066",
         "HEAD OF THE FAMILY": "Mullapudi Posamma",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2817284832",
