@@ -434,7 +434,7 @@
     {
         "CARDNO": "2820346228",
         "HEAD OF THE FAMILY": "Guttula Varalakshmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -764,8 +764,8 @@
     {
         "CARDNO": "2815086634",
         "HEAD OF THE FAMILY": "Penumakula Nuka Ratnam",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2813138305",
