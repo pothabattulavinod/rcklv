@@ -1124,7 +1124,7 @@
     {
         "CARDNO": "2811358143",
         "HEAD OF THE FAMILY": "VAKAPALLI PRAMEELA RANI",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2714,8 +2714,8 @@
     {
         "CARDNO": "2822586989",
         "HEAD OF THE FAMILY": "Adimulam Shilpa",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "10.000"
     },
     {
         "CARDNO": "2822486533",
