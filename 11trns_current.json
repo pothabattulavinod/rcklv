@@ -38,7 +38,7 @@
     {
         "CARDNO": "2822192514",
         "HEAD OF THE FAMILY": "Arava Rohini",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -698,8 +698,8 @@
     {
         "CARDNO": "2821532733",
         "HEAD OF THE FAMILY": "Sangeetha Tulasi Kanakalakshmi",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2805884370",
@@ -2024,8 +2024,8 @@
     {
         "CARDNO": "2814110287",
         "HEAD OF THE FAMILY": "Rowtu Swarna Kumaari",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "25.000"
     },
     {
         "CARDNO": "2816526855",
