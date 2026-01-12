@@ -1,11 +1,6 @@
 [
  
   {
-    "CARDNO": "2822192514",
-    "HEAD OF THE FAMILY": "Arava Rohini",
-    "UNITS": "2"
-  },
-  {
     "CARDNO": "2810209729",
     "HEAD OF THE FAMILY": "Thummuri Karuna",
     "UNITS": "3"
@@ -658,6 +653,12 @@
     "CARDNO": "2805056528",
     "HEAD OF THE FAMILY": "Arava Sitha",
     "UNITS": "1"
+  },
+ 
+  {
+    "CARDNO": "2822192514",
+    "HEAD OF THE FAMILY": "Arava Rohini",
+    "UNITS": "2"
   },
   {
     "CARDNO": "2804647832",
@@ -2529,7 +2530,7 @@
     "UNITS": 2
   },
   {
-    "CARDNO": "2822628645)",
+    "CARDNO": "2822628645",
     "HEAD OF THE FAMILY": "Tarra Naveena",
     "UNITS": 4
   },
