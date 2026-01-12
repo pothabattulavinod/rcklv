@@ -2,7 +2,7 @@
     {
         "CARDNO": "2822482489",
         "HEAD OF THE FAMILY": "Uddagiri Santha",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -62,7 +62,7 @@
     {
         "CARDNO": "2821530519",
         "HEAD OF THE FAMILY": "Ankabattula Lavanya",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -938,7 +938,7 @@
     {
         "CARDNO": "2820381281",
         "HEAD OF THE FAMILY": "Sangitha Devi",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -1112,8 +1112,8 @@
     {
         "CARDNO": "2805763837",
         "HEAD OF THE FAMILY": "Chaganti Durga",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2816548278",
@@ -1562,8 +1562,8 @@
     {
         "CARDNO": "2806356739",
         "HEAD OF THE FAMILY": "Avala Bujjibabu",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "10.000"
     },
     {
         "CARDNO": "2807135309",
