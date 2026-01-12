@@ -224,8 +224,8 @@
     {
         "CARDNO": "2810031101",
         "HEAD OF THE FAMILY": "Pilli Adhi Lakshmi",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2807242437",
