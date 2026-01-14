@@ -782,7 +782,7 @@
     {
         "CARDNO": "2808983937",
         "HEAD OF THE FAMILY": "Surya Kumari Mudunuri",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -1244,7 +1244,7 @@
     {
         "CARDNO": "2819258113",
         "HEAD OF THE FAMILY": "Pedapati Sowjanya",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -2540,7 +2540,7 @@
     {
         "CARDNO": "2812463508",
         "HEAD OF THE FAMILY": "Kona Ammaji",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
