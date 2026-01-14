@@ -188,7 +188,7 @@
     {
         "CARDNO": "2800894841",
         "HEAD OF THE FAMILY": "Pasupuleti Bhapiraju",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -746,8 +746,8 @@
     {
         "CARDNO": "2819189727",
         "HEAD OF THE FAMILY": "Srikakolapu Kondamma",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2804911248",
@@ -782,13 +782,13 @@
     {
         "CARDNO": "2808983937",
         "HEAD OF THE FAMILY": "Surya Kumari Mudunuri",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
         "CARDNO": "2810569212",
         "HEAD OF THE FAMILY": "Pasupuleti Sita Ratnam",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1244,7 +1244,7 @@
     {
         "CARDNO": "2819258113",
         "HEAD OF THE FAMILY": "Pedapati Sowjanya",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1358,7 +1358,7 @@
     {
         "CARDNO": "2819153210",
         "HEAD OF THE FAMILY": "Yaramati Shanthakumari",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2228,7 +2228,7 @@
     {
         "CARDNO": "2807523511",
         "HEAD OF THE FAMILY": "Rowthu Venkatalakshmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2540,7 +2540,7 @@
     {
         "CARDNO": "2812463508",
         "HEAD OF THE FAMILY": "Kona Ammaji",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
