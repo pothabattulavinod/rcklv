@@ -122,8 +122,8 @@
     {
         "CARDNO": "2815115263",
         "HEAD OF THE FAMILY": "Nelluri Ramanamma",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "10.000"
     },
     {
         "CARDNO": "2801069064",
@@ -254,7 +254,7 @@
     {
         "CARDNO": "2810824992",
         "HEAD OF THE FAMILY": "Origunta Appalanarsa",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -428,7 +428,7 @@
     {
         "CARDNO": "2818375910",
         "HEAD OF THE FAMILY": "Abbireddy Nookaratnam",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
