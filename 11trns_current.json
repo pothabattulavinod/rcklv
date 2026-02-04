@@ -644,8 +644,8 @@
     {
         "CARDNO": "2809870202",
         "HEAD OF THE FAMILY": "Sangeetha Satya Veni",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2806719889",
@@ -782,7 +782,7 @@
     {
         "CARDNO": "2808983937",
         "HEAD OF THE FAMILY": "Surya Kumari Mudunuri",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1706,7 +1706,7 @@
     {
         "CARDNO": "2806144524",
         "HEAD OF THE FAMILY": "Seeram Setti Kanchana",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1970,7 +1970,7 @@
     {
         "CARDNO": "2813896590",
         "HEAD OF THE FAMILY": "Sunkara Varalaxmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2516,7 +2516,7 @@
     {
         "CARDNO": "2805086390",
         "HEAD OF THE FAMILY": "Mullapudi Nagamani",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
