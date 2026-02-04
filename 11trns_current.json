@@ -188,7 +188,7 @@
     {
         "CARDNO": "2808319993",
         "HEAD OF THE FAMILY": "Pasupuleti Suryakumari",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -362,8 +362,8 @@
     {
         "CARDNO": "2802388276",
         "HEAD OF THE FAMILY": "Yerra Manikyam",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "15.000"
     },
     {
         "CARDNO": "2801330057",
@@ -1052,7 +1052,7 @@
     {
         "CARDNO": "2818162566",
         "HEAD OF THE FAMILY": "Sangitha Anantha Lakshmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1292,8 +1292,8 @@
     {
         "CARDNO": "2809336354",
         "HEAD OF THE FAMILY": "Pedhapati Misamma",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "10.000"
     },
     {
         "CARDNO": "2810202086",
@@ -1478,8 +1478,8 @@
     {
         "CARDNO": "2805255327",
         "HEAD OF THE FAMILY": "Janapareddy Laxmi",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2816894851",
@@ -1736,7 +1736,7 @@
     {
         "CARDNO": "2801154771",
         "HEAD OF THE FAMILY": "Yerni Jyothi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2270,7 +2270,7 @@
     {
         "CARDNO": "2804794971",
         "HEAD OF THE FAMILY": "Ballireddy Lovamma",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2444,7 +2444,7 @@
     {
         "CARDNO": "2815021832",
         "HEAD OF THE FAMILY": "Ballireddy Manga",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2822,7 +2822,7 @@
     {
         "CARDNO": "2806446415",
         "HEAD OF THE FAMILY": "Pithani Bhanu",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
