@@ -326,7 +326,7 @@
     {
         "CARDNO": "2801666382",
         "HEAD OF THE FAMILY": "Maddala Devi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -518,7 +518,7 @@
     {
         "CARDNO": "2822035000",
         "HEAD OF THE FAMILY": "Odimenu Jyothi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1478,8 +1478,8 @@
     {
         "CARDNO": "2815202896",
         "HEAD OF THE FAMILY": "Simha Nagaratnam",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2809545955",
@@ -1508,7 +1508,7 @@
     {
         "CARDNO": "2809108000",
         "HEAD OF THE FAMILY": "Matsa Sitayamma",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1598,7 +1598,7 @@
     {
         "CARDNO": "2810868736",
         "HEAD OF THE FAMILY": "Kollapu Vijaya",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1820,7 +1820,7 @@
     {
         "CARDNO": "2816475998",
         "HEAD OF THE FAMILY": "Muppidi Swarnalatha",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2120,7 +2120,7 @@
     {
         "CARDNO": "2805628623",
         "HEAD OF THE FAMILY": "Mortha Durga",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2552,7 +2552,7 @@
     {
         "CARDNO": "2804468499",
         "HEAD OF THE FAMILY": "Kandhukuri Jyothi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2690,7 +2690,7 @@
     {
         "CARDNO": "2822486531",
         "HEAD OF THE FAMILY": "Kandhikatla Sudha",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
