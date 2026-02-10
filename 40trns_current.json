@@ -866,7 +866,7 @@
     {
         "CARDNO": "2801900518",
         "HEAD OF THE FAMILY": "Soodula Veera Siva Nagu",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1388,8 +1388,8 @@
     {
         "CARDNO": "2822034750",
         "HEAD OF THE FAMILY": "Pasupuleti Naveena",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2808690680",
