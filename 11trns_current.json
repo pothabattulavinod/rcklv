@@ -74,7 +74,7 @@
     {
         "CARDNO": "2812341346",
         "HEAD OF THE FAMILY": "Dhakarapu Surya Chakra Lakshmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2810,7 +2810,7 @@
     {
         "CARDNO": "2810860001",
         "HEAD OF THE FAMILY": "Nallamolu Adilakshmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
