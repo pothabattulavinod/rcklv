@@ -50,8 +50,8 @@
     {
         "CARDNO": "2821530519",
         "HEAD OF THE FAMILY": "Ankabattula Lavanya",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "10.000"
     },
     {
         "CARDNO": "2808443299",
@@ -1118,7 +1118,7 @@
     {
         "CARDNO": "2811477558",
         "HEAD OF THE FAMILY": "Garaga Poorna Pushpala Mani Mala",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2702,7 +2702,7 @@
     {
         "CARDNO": "2803192360",
         "HEAD OF THE FAMILY": "Pilla Uma Devi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2912,7 +2912,7 @@
     {
         "CARDNO": "2819174155",
         "HEAD OF THE FAMILY": "Peruri Gangabhavani",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
