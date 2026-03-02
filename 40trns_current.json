@@ -68,7 +68,7 @@
     {
         "CARDNO": "2803023172",
         "HEAD OF THE FAMILY": "Thota Lakshmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -992,7 +992,7 @@
     {
         "CARDNO": "2803544441",
         "HEAD OF THE FAMILY": "Mekala Bullamma",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1130,7 +1130,7 @@
     {
         "CARDNO": "2819145919",
         "HEAD OF THE FAMILY": "Penumakula Satyavathi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1796,8 +1796,8 @@
     {
         "CARDNO": "2809299543",
         "HEAD OF THE FAMILY": "Dara Satyavathi",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "25.000"
     },
     {
         "CARDNO": "2819190298",
