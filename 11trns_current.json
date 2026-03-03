@@ -974,7 +974,7 @@
     {
         "CARDNO": "2817327922",
         "HEAD OF THE FAMILY": "Dasari Seetha Mani Mala",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1094,8 +1094,8 @@
     {
         "CARDNO": "2808322216",
         "HEAD OF THE FAMILY": "Sangitha Suryanarayanamma",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2816548278",
@@ -1940,8 +1940,8 @@
     {
         "CARDNO": "2821670127",
         "HEAD OF THE FAMILY": "Dasari Krishna",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "10.000"
     },
     {
         "CARDNO": "2807572092",
@@ -2354,7 +2354,7 @@
     {
         "CARDNO": "2812651687",
         "HEAD OF THE FAMILY": "Pilli Padmanabham",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
