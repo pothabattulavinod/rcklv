@@ -356,8 +356,8 @@
     {
         "CARDNO": "2803361715",
         "HEAD OF THE FAMILY": "Pilli Eswaramma",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "10.000"
     },
     {
         "CARDNO": "2812688031",
@@ -470,7 +470,7 @@
     {
         "CARDNO": "2819283874",
         "HEAD OF THE FAMILY": "Pilli Raghava",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
