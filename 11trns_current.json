@@ -38,7 +38,7 @@
     {
         "CARDNO": "2802711263",
         "HEAD OF THE FAMILY": "Ayinavelli Padmavathi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -200,7 +200,7 @@
     {
         "CARDNO": "2816537947",
         "HEAD OF THE FAMILY": "Sunkara Rajani Kumari",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -476,8 +476,8 @@
     {
         "CARDNO": "2821520350",
         "HEAD OF THE FAMILY": "Dakarapu Devi Mounika",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "10.000"
     },
     {
         "CARDNO": "2819258810",
@@ -932,7 +932,7 @@
     {
         "CARDNO": "2812434160",
         "HEAD OF THE FAMILY": "Sangita Vijaya Lakshmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1022,7 +1022,7 @@
     {
         "CARDNO": "2815301502",
         "HEAD OF THE FAMILY": "Sangitha Satya Manikyamba",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1058,8 +1058,8 @@
     {
         "CARDNO": "2802372841",
         "HEAD OF THE FAMILY": "Ijjina Varalakshmi",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2809655033",
@@ -1178,7 +1178,7 @@
     {
         "CARDNO": "2817042485",
         "HEAD OF THE FAMILY": "Udi Satyavathi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1310,7 +1310,7 @@
     {
         "CARDNO": "2803664496",
         "HEAD OF THE FAMILY": "Dasari Venkatalakshmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1526,7 +1526,7 @@
     {
         "CARDNO": "2806356739",
         "HEAD OF THE FAMILY": "Avala Bujjibabu",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1556,7 +1556,7 @@
     {
         "CARDNO": "2809335779",
         "HEAD OF THE FAMILY": "Yerni Venkata Laxmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1688,7 +1688,7 @@
     {
         "CARDNO": "2800323969",
         "HEAD OF THE FAMILY": "SEERAMSETTI NARSAMMA",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1718,7 +1718,7 @@
     {
         "CARDNO": "2802139007",
         "HEAD OF THE FAMILY": "Gompa Anasuya",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1880,7 +1880,7 @@
     {
         "CARDNO": "2814550481",
         "HEAD OF THE FAMILY": "Pilli Mangamma",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1964,8 +1964,8 @@
     {
         "CARDNO": "2807686824",
         "HEAD OF THE FAMILY": "Pilla Parvathi",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2813896590",
@@ -2090,7 +2090,7 @@
     {
         "CARDNO": "2820927590",
         "HEAD OF THE FAMILY": "Konda Anitha",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2102,7 +2102,7 @@
     {
         "CARDNO": "2818323621",
         "HEAD OF THE FAMILY": "Pilli Prasad",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2240,7 +2240,7 @@
     {
         "CARDNO": "2819182290",
         "HEAD OF THE FAMILY": "Pilli Durga Devi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2354,7 +2354,7 @@
     {
         "CARDNO": "2812651687",
         "HEAD OF THE FAMILY": "Pilli Padmanabham",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2516,8 +2516,8 @@
     {
         "CARDNO": "2819392741",
         "HEAD OF THE FAMILY": "Anduboyina Sri Padma",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2812463508",
@@ -2552,7 +2552,7 @@
     {
         "CARDNO": "2812866628",
         "HEAD OF THE FAMILY": "ANDUBOYINA RAMASATYAVATHI",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2654,7 +2654,7 @@
     {
         "CARDNO": "2818593956",
         "HEAD OF THE FAMILY": "Yeleti Kantham",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2708,7 +2708,7 @@
     {
         "CARDNO": "2819191124",
         "HEAD OF THE FAMILY": "Vasam Setti Chandrakala",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2888,7 +2888,7 @@
     {
         "CARDNO": "2817516228",
         "HEAD OF THE FAMILY": "Koparthi Talupulamma",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2954,7 +2954,7 @@
     {
         "CARDNO": "2819282732",
         "HEAD OF THE FAMILY": "Thainam Veeralakshmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
