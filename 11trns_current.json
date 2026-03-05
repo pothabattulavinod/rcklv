@@ -170,7 +170,7 @@
     {
         "CARDNO": "2822482489",
         "HEAD OF THE FAMILY": "Uddagiri Santha",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -194,8 +194,8 @@
     {
         "CARDNO": "2816187728",
         "HEAD OF THE FAMILY": "Pasupuleti Raghava",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "15.000"
     },
     {
         "CARDNO": "2816537947",
@@ -908,7 +908,7 @@
     {
         "CARDNO": "2810662143",
         "HEAD OF THE FAMILY": "Garaga Subbayamma",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
