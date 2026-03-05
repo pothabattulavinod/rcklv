@@ -488,8 +488,8 @@
     {
         "CARDNO": "2811542113",
         "HEAD OF THE FAMILY": "Sadanala Laxmi",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2805363716",
@@ -950,7 +950,7 @@
     {
         "CARDNO": "2820474162",
         "HEAD OF THE FAMILY": "Penumakula Devika",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1442,7 +1442,7 @@
     {
         "CARDNO": "2801571034",
         "HEAD OF THE FAMILY": "Adagarla Saraswathi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1532,7 +1532,7 @@
     {
         "CARDNO": "2814623179",
         "HEAD OF THE FAMILY": "Penumakula Venkatalakshmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
