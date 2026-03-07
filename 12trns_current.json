@@ -938,7 +938,7 @@
     {
         "CARDNO": "2818236314",
         "HEAD OF THE FAMILY": "Pasupuleti Anantha Lakshmi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1448,8 +1448,8 @@
     {
         "CARDNO": "2817417951",
         "HEAD OF THE FAMILY": "Bandaru Satyavathi",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "10.000"
     },
     {
         "CARDNO": "2818498715",
@@ -1730,7 +1730,7 @@
     {
         "CARDNO": "2808556894",
         "HEAD OF THE FAMILY": "Kollabattula Sandya",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
