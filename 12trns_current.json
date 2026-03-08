@@ -314,8 +314,8 @@
     {
         "CARDNO": "2820334625",
         "HEAD OF THE FAMILY": "Satyam Durga Mani",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2820334634",
@@ -950,7 +950,7 @@
     {
         "CARDNO": "2819120018",
         "HEAD OF THE FAMILY": "Elugubanti Parvathi",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -1148,7 +1148,7 @@
     {
         "CARDNO": "2800279117",
         "HEAD OF THE FAMILY": "Chintha Ramadevi",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -1514,8 +1514,8 @@
     {
         "CARDNO": "2801153731",
         "HEAD OF THE FAMILY": "Gandimenu Lakshmi",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2819311543",
@@ -2246,8 +2246,8 @@
     {
         "CARDNO": "2821870649",
         "HEAD OF THE FAMILY": "bommothu keerthi",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "15.000"
     },
     {
         "CARDNO": "2807864740",
@@ -2600,7 +2600,7 @@
     {
         "CARDNO": "2806490797",
         "HEAD OF THE FAMILY": "Savarapu Dharmayya",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
