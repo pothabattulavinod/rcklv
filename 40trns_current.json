@@ -416,7 +416,7 @@
     {
         "CARDNO": "2811084820",
         "HEAD OF THE FAMILY": "Bonagiri Suryavathi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1412,8 +1412,8 @@
     {
         "CARDNO": "2818586306",
         "HEAD OF THE FAMILY": "Akula Padma",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "15.000"
     },
     {
         "CARDNO": "2817659687",
@@ -2276,7 +2276,7 @@
     {
         "CARDNO": "2822618087",
         "HEAD OF THE FAMILY": "Naripireddy Padmavathi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
