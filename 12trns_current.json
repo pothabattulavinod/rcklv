@@ -392,8 +392,8 @@
     {
         "CARDNO": "2809110389",
         "HEAD OF THE FAMILY": "Ganapathiraju Janaki Devi",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "15.000"
     },
     {
         "CARDNO": "2810485429",
@@ -524,8 +524,8 @@
     {
         "CARDNO": "2817116821",
         "HEAD OF THE FAMILY": "Pantham Sujatha",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2810586193",
@@ -704,8 +704,8 @@
     {
         "CARDNO": "2806450496",
         "HEAD OF THE FAMILY": "Pantham Durga Devi",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2803949648",
@@ -752,8 +752,8 @@
     {
         "CARDNO": "2810813829",
         "HEAD OF THE FAMILY": "Gosam Setti Vardhanamma",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "5.000"
     },
     {
         "CARDNO": "2815086634",
