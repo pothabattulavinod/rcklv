@@ -968,8 +968,8 @@
     {
         "CARDNO": "2804135950",
         "HEAD OF THE FAMILY": "Kolluri Devi",
-        "transaction_status": "Unknown",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2819283415",
