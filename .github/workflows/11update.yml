@@ -1,0 +1,56 @@
+name: RC 11 Update Check
+
+on:
+workflow_dispatch:
+
+env:
+FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+jobs:
+run-check:
+runs-on: ubuntu-latest
+
+```
+steps:
+  - name: Checkout repository
+    uses: actions/checkout@v4
+    with:
+      persist-credentials: false
+      fetch-depth: 0
+
+  - name: Setup Python
+    uses: actions/setup-python@v5
+    with:
+      python-version: "3.11"
+
+  - name: Install dependencies
+    run: |
+      python -m pip install --upgrade pip
+      pip install requests beautifulsoup4
+
+  - name: Run RC transaction script
+    run: python updatefrice11.py
+
+  - name: Commit and push results
+    env:
+      GH_PAT: ${{ secrets.GH_PAT }}
+    run: |
+      git config --global user.name "pothabattulavinod"
+      git config --global user.email "vinodyadavpothabattula666@gmail.com"
+
+      if [ ! -s 11trns_current.json ]; then
+        echo '{"transactions":[]}' > 11trns_current.json
+      fi
+
+      git add 11trns_current.json
+
+      if ! git diff-index --quiet HEAD; then
+        git commit -m "Auto update RC transaction results [skip ci]"
+      else
+        echo "No changes to commit"
+        exit 0
+      fi
+
+      git remote set-url origin https://x-access-token:${GH_PAT}@github.com/pothabattulavinod/rcklv.git
+      git push origin HEAD:main
+```
