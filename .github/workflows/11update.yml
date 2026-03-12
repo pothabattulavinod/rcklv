@@ -1,10 +1,10 @@
 name: RC 11 Update Check
 
-env:
-FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 on:
 workflow_dispatch:   # manual trigger only
+
+env:
+FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
 run-check:
@@ -52,7 +52,7 @@ steps:
       # Stage file
       git add 11trns_current.json
 
-      # Commit if changes exist
+      # Commit if there are changes
       if ! git diff-index --quiet HEAD; then
         git commit -m "Auto update RC transaction results [skip ci]"
       else
