@@ -1178,7 +1178,7 @@
     {
         "CARDNO": "2817042485",
         "HEAD OF THE FAMILY": "Udi Satyavathi",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -2012,7 +2012,7 @@
     {
         "CARDNO": "2811543803",
         "HEAD OF THE FAMILY": "Tarra Lalitha Devi",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -2144,7 +2144,7 @@
     {
         "CARDNO": "2808177289",
         "HEAD OF THE FAMILY": "Yerni Vara Lakshmi",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -2222,7 +2222,7 @@
     {
         "CARDNO": "2814509055",
         "HEAD OF THE FAMILY": "Tarra Sooridu",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -2282,7 +2282,7 @@
     {
         "CARDNO": "2806201853",
         "HEAD OF THE FAMILY": "Pilla Venkata Lakshmi",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
