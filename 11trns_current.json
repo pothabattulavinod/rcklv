@@ -1868,8 +1868,8 @@
     {
         "CARDNO": "2801280987",
         "HEAD OF THE FAMILY": "Koyya Siva Kumari",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2820432176",
@@ -1946,7 +1946,7 @@
     {
         "CARDNO": "2807572092",
         "HEAD OF THE FAMILY": "Pilla Prabhavathi",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -2018,8 +2018,8 @@
     {
         "CARDNO": "2809378646",
         "HEAD OF THE FAMILY": "Pilla Bhavani",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "10.000"
     },
     {
         "CARDNO": "2818234803",
@@ -3008,8 +3008,8 @@
     {
         "CARDNO": "2822542179",
         "HEAD OF THE FAMILY": "Bantu Ramya",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "10.000"
     },
     {
         "CARDNO": "2822618163",
