@@ -278,8 +278,8 @@
     {
         "CARDNO": "2811056189",
         "HEAD OF THE FAMILY": "Koppireddy Nukaratnam",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2802209168",
@@ -878,8 +878,8 @@
     {
         "CARDNO": "2801900518",
         "HEAD OF THE FAMILY": "Soodula Veera Siva Nagu",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "15.000"
     },
     {
         "CARDNO": "2809046844",
@@ -932,8 +932,8 @@
     {
         "CARDNO": "2812574495",
         "HEAD OF THE FAMILY": "Penumakula Satyavathi",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "10.000"
     },
     {
         "CARDNO": "2811873671",
@@ -1388,7 +1388,7 @@
     {
         "CARDNO": "2809605417",
         "HEAD OF THE FAMILY": "Madaka Durga",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -1820,8 +1820,8 @@
     {
         "CARDNO": "2812072240",
         "HEAD OF THE FAMILY": "Kedari Mani",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "15.000"
     },
     {
         "CARDNO": "2813947843",
@@ -1952,8 +1952,8 @@
     {
         "CARDNO": "2803115853",
         "HEAD OF THE FAMILY": "Bonthu Naga Lakshmi",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "20.000"
     },
     {
         "CARDNO": "2812349495",
@@ -2174,7 +2174,7 @@
     {
         "CARDNO": "2819071321",
         "HEAD OF THE FAMILY": "Tokada Gangabhavani",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
