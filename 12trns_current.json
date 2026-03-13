@@ -1058,7 +1058,7 @@
     {
         "CARDNO": "2819265251",
         "HEAD OF THE FAMILY": "Yandra Prakasam",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -1508,7 +1508,7 @@
     {
         "CARDNO": "2809108000",
         "HEAD OF THE FAMILY": "Matsa Sitayamma",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
@@ -2054,7 +2054,7 @@
     {
         "CARDNO": "2820749593",
         "HEAD OF THE FAMILY": "Ratna Prakash Yindri",
-        "transaction_status": "Not Done",
+        "transaction_status": "Unknown",
         "Avail.Commodity": null
     },
     {
