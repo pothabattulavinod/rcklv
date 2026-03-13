@@ -14,13 +14,13 @@
     {
         "CARDNO": "2822238295",
         "HEAD OF THE FAMILY": "Kamidi Swarna Jyothi",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
         "CARDNO": "2822482497",
         "HEAD OF THE FAMILY": "Vatsavayi Rani",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -1508,7 +1508,7 @@
     {
         "CARDNO": "2809108000",
         "HEAD OF THE FAMILY": "Matsa Sitayamma",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2054,7 +2054,7 @@
     {
         "CARDNO": "2820749593",
         "HEAD OF THE FAMILY": "Ratna Prakash Yindri",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
@@ -2720,7 +2720,7 @@
     {
         "CARDNO": "2822486533",
         "HEAD OF THE FAMILY": "Kalidindi Saroja",
-        "transaction_status": "Unknown",
+        "transaction_status": "Not Done",
         "Avail.Commodity": null
     },
     {
