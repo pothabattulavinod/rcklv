@@ -1760,8 +1760,8 @@
     {
         "CARDNO": "2814605468",
         "HEAD OF THE FAMILY": "Challa Vijay Kumar",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "5.000"
     },
     {
         "CARDNO": "2817776218",
