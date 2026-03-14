@@ -2714,8 +2714,8 @@
     {
         "CARDNO": "2822586989",
         "HEAD OF THE FAMILY": "Adimulam Shilpa",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "10.000"
     },
     {
         "CARDNO": "2822486533",
