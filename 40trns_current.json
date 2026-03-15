@@ -1238,8 +1238,8 @@
     {
         "CARDNO": "2803238819",
         "HEAD OF THE FAMILY": "Nakka Suresh",
-        "transaction_status": "Not Done",
-        "Avail.Commodity": null
+        "transaction_status": "Done",
+        "Avail.Commodity": "10.000"
     },
     {
         "CARDNO": "2820341895",
