@@ -1,0 +1,58 @@
+name: RC stock
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-check:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install selenium webdriver-manager
+
+      - name: Install Chrome
+        run: |
+          sudo apt update
+          sudo apt install -y chromium-browser chromium-chromedriver
+
+      - name: Run stock script
+        run: python stock_fetch.py
+
+      - name: Commit and push results
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+
+          git config --global user.name "pothabattulavinod"
+          git config --global user.email "vinodyadavpothabattula666@gmail.com"
+
+          if [ ! -s stock_current.json ]; then
+            echo '{"stock":[]}' > stock_current.json
+          fi
+
+          git add stock_current.json
+
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "Update FPS stock data [skip ci]"
+          else
+            echo "No changes to commit"
+          fi
+
+          git remote remove origin
+          git remote add origin https://x-access-token:${GH_PAT}@github.com/pothabattulavinod/rcklv.git
+
+          git push origin HEAD:main
