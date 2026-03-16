@@ -9,14 +9,14 @@ FPS_ID = "0428003"
 MONTH = "3"
 YEAR = "2026"
 
-chrome_options = Options()
-chrome_options.binary_location = "/usr/bin/chromium-browser"
+options = Options()
+options.binary_location = "/usr/bin/google-chrome"
 
-chrome_options.add_argument("--headless")
-chrome_options.add_argument("--no-sandbox")
-chrome_options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--headless=new")
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
 
-driver = webdriver.Chrome(options=chrome_options)
+driver = webdriver.Chrome(options=options)
 
 driver.get("https://aepos.ap.gov.in/FPS_Stock")
 
