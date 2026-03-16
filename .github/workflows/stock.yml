@@ -1,4 +1,5 @@
-name: RC 11 Transaction Check
+name: RC stock
+
 
 on:
   workflow_dispatch:
