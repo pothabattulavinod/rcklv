@@ -1,0 +1,92 @@
+{
+  "fps_id": "0428003",
+  "month": "3",
+  "year": "2026",
+  "stock": [
+    {
+      "commodity": "Palmolein Oil",
+      "alloted_qty": "0.0",
+      "cb_qty": "0.0"
+    },
+    {
+      "commodity": "FRice",
+      "alloted_qty": "0.0",
+      "cb_qty": "0.0"
+    },
+    {
+      "commodity": "RG Dal One kg Pkt",
+      "alloted_qty": "0.0",
+      "cb_qty": "0.0"
+    },
+    {
+      "commodity": "P.Oil Half Ltr",
+      "alloted_qty": "0.0",
+      "cb_qty": "0.0"
+    },
+    {
+      "commodity": "F Fine rice 25 Kg",
+      "alloted_qty": "0.0",
+      "cb_qty": "0.0"
+    },
+    {
+      "commodity": "F Rice 3 Kg Pkt",
+      "alloted_qty": "0.0",
+      "cb_qty": "0.0"
+    },
+    {
+      "commodity": "Whole Wheat Atta",
+      "alloted_qty": "0.0",
+      "cb_qty": "0.0"
+    },
+    {
+      "commodity": "Raagi",
+      "alloted_qty": "0.0",
+      "cb_qty": "0.0"
+    },
+    {
+      "commodity": "Jowar",
+      "alloted_qty": "0.0",
+      "cb_qty": "0.0"
+    },
+    {
+      "commodity": "Flood Rice",
+      "alloted_qty": "0.0",
+      "cb_qty": "0.85"
+    },
+    {
+      "commodity": "Flood Sugar HK",
+      "alloted_qty": "0.0",
+      "cb_qty": "0.85"
+    },
+    {
+      "commodity": "Flood Dal",
+      "alloted_qty": "0.0",
+      "cb_qty": "0.0"
+    },
+    {
+      "commodity": "Flood Poil",
+      "alloted_qty": "0.0",
+      "cb_qty": "0.0"
+    },
+    {
+      "commodity": "FRice",
+      "alloted_qty": "14605.0",
+      "cb_qty": "713.0"
+    },
+    {
+      "commodity": "SUGAR HALF KG",
+      "alloted_qty": "1058.0",
+      "cb_qty": "0.0"
+    },
+    {
+      "commodity": "RG Dal One kg Pkt",
+      "alloted_qty": "0.0",
+      "cb_qty": "0.0"
+    },
+    {
+      "commodity": "WM Atta Pkt",
+      "alloted_qty": "0.0",
+      "cb_qty": "0.0"
+    }
+  ]
+}
