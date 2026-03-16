@@ -1,4 +1,4 @@
-name: RC stock
+name: RC 11 Transaction Check
 
 on:
   workflow_dispatch:
@@ -22,17 +22,17 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install selenium webdriver-manager
+          pip install selenium
 
-      - name: Install Chrome
+      - name: Install Chromium
         run: |
           sudo apt update
           sudo apt install -y chromium-browser chromium-chromedriver
 
-      - name: Run stock script
+      - name: Run script
         run: python stock_fetch.py
 
-      - name: Commit and push results
+      - name: Commit JSON
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
@@ -40,16 +40,10 @@ jobs:
           git config --global user.name "pothabattulavinod"
           git config --global user.email "vinodyadavpothabattula666@gmail.com"
 
-          if [ ! -s stock_current.json ]; then
-            echo '{"stock":[]}' > stock_current.json
-          fi
-
           git add stock_current.json
 
           if ! git diff-index --quiet HEAD; then
-            git commit -m "Update FPS stock data [skip ci]"
-          else
-            echo "No changes to commit"
+            git commit -m "Update stock data"
           fi
 
           git remote remove origin
