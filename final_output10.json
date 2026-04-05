@@ -66,8 +66,8 @@
         "card_no": "2822308705",
         "name": "Kurakula Veerababu",
         "rice": 15,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "2822586937",
@@ -549,8 +549,8 @@
         "card_no": "RAP041100804487",
         "name": "Pedagada Jyothi",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "WAP0428110A0006",
@@ -990,8 +990,8 @@
         "card_no": "WAP042811000382",
         "name": "Sangisetti Velagalamma",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "WAP0428110A0034",
@@ -1158,8 +1158,8 @@
         "card_no": "JAP042801200103",
         "name": "Kanukolanu Durgarao",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "WAP042811000588",
@@ -1718,8 +1718,8 @@
         "card_no": "RAP042801001526",
         "name": "Geddam Achyutakumari",
         "rice": 10,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "WAP042811000406",
@@ -1844,8 +1844,8 @@
         "card_no": "WAP042811000496",
         "name": "Bathula Anusha",
         "rice": 15,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "2820381493",
@@ -2194,8 +2194,8 @@
         "card_no": "JAP042801000089",
         "name": "Nune Satti Babu",
         "rice": 15,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "RAP042801005080",
@@ -2502,8 +2502,8 @@
         "card_no": "JAP042801000060",
         "name": "Pallapu Venkata Lakshmi",
         "rice": 15,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "RAP042801002785",
@@ -2642,8 +2642,8 @@
         "card_no": "2820381472",
         "name": "Dhadi Gangabhavani",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "WAP042811000076",
@@ -2747,8 +2747,8 @@
         "card_no": "RAP042801002782",
         "name": "Nakkina Achamma",
         "rice": 5,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "WAP042811000112",
@@ -3006,8 +3006,8 @@
         "card_no": "WAP042811000328",
         "name": "Mavuri Seetha",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "WAP042811000587",
@@ -3027,8 +3027,8 @@
         "card_no": "JAP042801000249",
         "name": "Nakkina Sridevi",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "2821354424",
@@ -3615,8 +3615,8 @@
         "card_no": "WAP042811000537",
         "name": "Valluri Chakramma",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "RAP042801005420",
@@ -4252,8 +4252,8 @@
         "card_no": "WAP042811000180",
         "name": "Mummana Venkata Lakshmi",
         "rice": 10,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "JAP042801000024",
@@ -4364,8 +4364,8 @@
         "card_no": "RAP042801005436",
         "name": "Vanum Lakshmi",
         "rice": 15,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "WAP042811000441",
@@ -4511,8 +4511,8 @@
         "card_no": "WAP042811000390",
         "name": "Ravulapudi Challamma",
         "rice": 15,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "JAP042801000263",
@@ -4539,8 +4539,8 @@
         "card_no": "2820244266",
         "name": "Medisetti Vijaya Kumari",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "WAP042811000098",
@@ -4658,8 +4658,8 @@
         "card_no": "WAP042811000364",
         "name": "Amarapalli Chantamma",
         "rice": 10,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "RAP042801002979",
@@ -4910,8 +4910,8 @@
         "card_no": "WAP042811000555",
         "name": "Yedakula Appayamma",
         "rice": 10,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "WAP042811000596",
@@ -4994,8 +4994,8 @@
         "card_no": "WAP042811000545",
         "name": "Gandharapu Devi",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "RAP042801002976",
@@ -5008,8 +5008,8 @@
         "card_no": "WAP0428110A0021",
         "name": "Medishetti Veera Venktrao",
         "rice": 15,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "WAP042811000576",
@@ -5071,8 +5071,8 @@
         "card_no": "WAP042811000527",
         "name": "Medisetty Ammaji",
         "rice": 15,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "WAP042811000418",
@@ -5827,15 +5827,15 @@
         "card_no": "WAP042811000128",
         "name": "Bobbara Durgamma",
         "rice": 5,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "JAP042801000244",
         "name": "Nagamalla Mahalakshmi",
         "rice": 5,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "05-04-2026"
     },
     {
         "card_no": "WAP042811000224",
