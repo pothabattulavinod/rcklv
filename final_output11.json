@@ -1690,8 +1690,8 @@
         "card_no": "RAP042801206676",
         "name": "Yerni Mangatayaru",
         "rice": 5,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "27-03-2026"
     },
     {
         "card_no": "WAP0428040A0028",
@@ -1998,8 +1998,8 @@
         "card_no": "WAP0428011A0066",
         "name": "Yerni Jyothi",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "27-03-2026"
     },
     {
         "card_no": "RAP042801103843",
@@ -3454,8 +3454,8 @@
         "card_no": "YAP042801200539",
         "name": "Gollapalli Suryavathi",
         "rice": 35,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "26-03-2026"
     },
     {
         "card_no": "WAP042801200272",
