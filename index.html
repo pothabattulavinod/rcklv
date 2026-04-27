@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Search Rice Card</title>
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body { padding: 20px; }
@@ -16,6 +15,29 @@
 
 <div class="container">
   <h1 class="mb-4 text-center">Search Rice Card</h1>
+
+  <!-- Counters -->
+  <div class="row mb-3 text-center">
+    <div class="col-md-6">
+      <div class="alert alert-primary">
+        <strong>Total Cards: </strong><span id="totalCards">0</span>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="alert alert-danger">
+        <strong>Pending Cards: </strong><span id="pendingCards">0</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Select Filter -->
+  <div class="mb-3">
+    <select id="statusFilter" class="form-select form-select-lg">
+      <option value="all">Show All</option>
+      <option value="done">Done</option>
+      <option value="pending">Not Done</option>
+    </select>
+  </div>
 
   <div class="mb-3">
     <input type="text" id="searchInput" class="form-control form-control-lg" placeholder="Search by CARDNO, Name, or Status" disabled>
@@ -39,33 +61,39 @@
 <script>
 let jsonData = [];
 let trnsData = [];
+let currentFilter = 'all';
 
-// Card JSON files
-const jsonFiles = ['11APR.json', '40APR.json', '12APR.json'];
+const jsonFiles = [
+'https://raw.githubusercontent.com/pothabattulavinod/rcklv/refs/heads/main/11APR.json',
+'https://raw.githubusercontent.com/pothabattulavinod/rcklv/refs/heads/main/40APR.json',
+'https://raw.githubusercontent.com/pothabattulavinod/rcklv/refs/heads/main/12APR.json'
+];
 
-// Transaction JSON files
-const trnsFiles = ['11trns_current.json', '12trns_current.json', '40trns_current.json'];
+const trnsFiles = [
+'https://raw.githubusercontent.com/pothabattulavinod/rcklv/refs/heads/main/11trns_current.json',
+'https://raw.githubusercontent.com/pothabattulavinod/rcklv/refs/heads/main/12trns_current.json',
+'https://raw.githubusercontent.com/pothabattulavinod/rcklv/refs/heads/main/40trns_current.json'
+];
 
-// Load all card JSON files
-Promise.all(jsonFiles.map(file =>
-  fetch(file).then(res => res.json())
-))
+Promise.all(jsonFiles.map(file => fetch(file).then(res => res.json())))
 .then(results => {
   jsonData = results.flat();
-  // Load all transaction JSON files
-  return Promise.all(trnsFiles.map(file =>
-    fetch(file).then(res => res.json())
-  ));
+  return Promise.all(trnsFiles.map(file => fetch(file).then(res => res.json())));
 })
 .then(trnsResults => {
-  // Flatten and combine all transaction data
-  trnsData = trnsResults.flat().map(item => item); 
+  trnsData = trnsResults.flat();
   document.getElementById('searchInput').disabled = false;
-  filterResults(); // show all data initially
+  filterResults();
 })
-.catch(err => alert("Failed to load one or more JSON files: " + err));
+.catch(err => alert("Failed to load JSON files: " + err));
 
 document.getElementById('searchInput').addEventListener('input', filterResults);
+
+// ✅ Dropdown change
+document.getElementById('statusFilter').addEventListener('change', function() {
+  currentFilter = this.value;
+  filterResults();
+});
 
 function filterResults() {
   const query = document.getElementById('searchInput').value.toLowerCase();
@@ -74,13 +102,28 @@ function filterResults() {
 
   if (!jsonData.length) return;
 
+  let total = 0;
+  let pending = 0;
+
   const results = jsonData.filter(item => {
     const trnsItem = trnsData.find(t => t.CARDNO === item.CARDNO);
     const status = trnsItem ? trnsItem.transaction_status : 'No';
+    const isDone = status.toLowerCase() === 'done';
+
+    total++;
+    if (!isDone) pending++;
+
+    // ✅ Apply filter
+    if (currentFilter === 'done' && !isDone) return false;
+    if (currentFilter === 'pending' && isDone) return false;
+
     return item.CARDNO.toLowerCase().includes(query) ||
            item['HEAD OF THE FAMILY'].toLowerCase().includes(query) ||
            status.toLowerCase().includes(query);
   });
+
+  document.getElementById('totalCards').textContent = total;
+  document.getElementById('pendingCards').textContent = pending;
 
   if (!results.length) {
     tbody.innerHTML = '<tr><td colspan="4" class="text-center">No results found.</td></tr>';
