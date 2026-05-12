@@ -21,6 +21,13 @@
         "date": null
     },
     {
+        "card_no": "2810714789",
+        "name": "Nakka Jayarani",
+        "rice": 20,
+        "transaction_status": "Done",
+        "date": "07-05-2026"
+    },
+    {
         "card_no": "2816816972",
         "name": "Bommathula Nagamani",
         "rice": 10,
@@ -283,8 +290,8 @@
         "card_no": "2816187728",
         "name": "Pasupuleti Raghava",
         "rice": 15,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2816537947",
@@ -443,9 +450,9 @@
     {
         "card_no": "2812286030",
         "name": "Srirangam Satyavathi",
-        "rice": 10,
-        "transaction_status": "Not Done",
-        "date": null
+        "rice": 15,
+        "transaction_status": "Done",
+        "date": "08-05-2026"
     },
     {
         "card_no": "2810049748",
@@ -1368,8 +1375,8 @@
         "card_no": "2817042485",
         "name": "Udi Satyavathi",
         "rice": 5,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2809067709",
@@ -1417,8 +1424,8 @@
         "card_no": "2819305950",
         "name": "Dhatla Jyothi",
         "rice": 15,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2809157120",
@@ -2359,6 +2366,13 @@
         "date": "27-04-2026"
     },
     {
+        "card_no": "2800176839",
+        "name": "Madiki Swarnakumari",
+        "rice": 20,
+        "transaction_status": "Not Done",
+        "date": null
+    },
+    {
         "card_no": "2814509055",
         "name": "Tarra Sooridu",
         "rice": 20,
@@ -2432,8 +2446,8 @@
         "card_no": "2805207886",
         "name": "Moturi Lakshmi",
         "rice": 5,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2801181043",
@@ -3094,6 +3108,13 @@
         "date": "01-05-2026"
     },
     {
+        "card_no": "2803081620",
+        "name": "Balantharapu Venkata Lakshmi",
+        "rice": 20,
+        "transaction_status": "Not Done",
+        "date": null
+    },
+    {
         "card_no": "2813088257",
         "name": "Pilla Durga",
         "rice": 5,
@@ -3367,6 +3388,13 @@
         "date": "05-05-2026"
     },
     {
+        "card_no": "2819336148",
+        "name": "Gangaraju Chandra Likhitha",
+        "rice": 10,
+        "transaction_status": "Done",
+        "date": "11-05-2026"
+    },
+    {
         "card_no": "2822618163",
         "name": "Pedireddy Suresh",
         "rice": 15,
@@ -3552,8 +3580,8 @@
         "card_no": "2811948026",
         "name": "Pasala Lakshmi",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2807517119",
@@ -3657,8 +3685,8 @@
         "card_no": "2808048550",
         "name": "Nallakula Laxminarasamma",
         "rice": 15,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2803812011",
@@ -3692,8 +3720,8 @@
         "card_no": "2801213362",
         "name": "Mingi Durgadevi",
         "rice": 15,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2802209168",
@@ -3929,9 +3957,9 @@
     {
         "card_no": "2802575429",
         "name": "Sadanala Krishna Veni",
-        "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "rice": 15,
+        "transaction_status": "Done",
+        "date": "11-05-2026"
     },
     {
         "card_no": "2816390986",
@@ -3979,8 +4007,8 @@
         "card_no": "2805363716",
         "name": "Pasumarthi Nagamani",
         "rice": 5,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2813397517",
@@ -4056,8 +4084,8 @@
         "card_no": "2818598094",
         "name": "Pasumarthi Veera Venkata Sesharatnam",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2816622572",
@@ -4245,8 +4273,8 @@
         "card_no": "2806176590",
         "name": "Naripireddy Ravana",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2801096627",
@@ -4308,8 +4336,8 @@
         "card_no": "2819180926",
         "name": "Thelu Sita Ratnam",
         "rice": 5,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2820426833",
@@ -4364,8 +4392,8 @@
         "card_no": "2801900518",
         "name": "Soodula Veera Siva Nagu",
         "rice": 15,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2809046844",
@@ -4413,8 +4441,8 @@
         "card_no": "2812574495",
         "name": "Penumakula Satyavathi",
         "rice": 10,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2811873671",
@@ -4623,8 +4651,8 @@
         "card_no": "2811306767",
         "name": "Visali Undamatla",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2810309072",
@@ -4826,8 +4854,8 @@
         "card_no": "2805563147",
         "name": "Dodda Achheyamma",
         "rice": 10,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2815250705",
@@ -5288,8 +5316,8 @@
         "card_no": "2803831797",
         "name": "Chinta Suvarna Kumari",
         "rice": 10,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2805145620",
@@ -6037,8 +6065,8 @@
         "card_no": "2819158303",
         "name": "Mingi Savithri",
         "rice": 10,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2819242375",
@@ -6093,8 +6121,8 @@
         "card_no": "2819196904",
         "name": "Mingi Prasanna",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2810457336",
@@ -6121,8 +6149,8 @@
         "card_no": "2805983192",
         "name": "Mingi Subbalakshmi",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2814076780",
@@ -6233,8 +6261,8 @@
         "card_no": "2819235802",
         "name": "Kammidi Venkayamma",
         "rice": 5,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2819237800",
@@ -6618,8 +6646,8 @@
         "card_no": "2809489183",
         "name": "Penumakula Satyavathi",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2819115814",
@@ -6632,8 +6660,8 @@
         "card_no": "2819319013",
         "name": "Pasupuleti Narsanna",
         "rice": 15,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2805187967",
@@ -6709,8 +6737,8 @@
         "card_no": "2815086634",
         "name": "Penumakula Nuka Ratnam",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2808841643",
@@ -6821,8 +6849,8 @@
         "card_no": "2801591586",
         "name": "Dodda Gowri Parvathi",
         "rice": 10,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "12-05-2026"
     },
     {
         "card_no": "2807328136",
