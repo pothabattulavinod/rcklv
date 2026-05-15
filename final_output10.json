@@ -1347,7 +1347,7 @@
         "card_no": "2810410415",
         "name": "Adabala Varalakshmi",
         "rice": 20,
-        "transaction_status": "Not Done",
+        "transaction_status": "Done",
         "date": null
     },
     {
@@ -1858,7 +1858,7 @@
         "card_no": "2819133298",
         "name": "Palivela Vimala Ramalakshmi",
         "rice": 10,
-        "transaction_status": "Not Done",
+        "transaction_status": "Done",
         "date": null
     },
     {
@@ -4574,7 +4574,7 @@
         "card_no": "2807144387",
         "name": "Senapathi Devi",
         "rice": 20,
-        "transaction_status": "Not Done",
+        "transaction_status": "Done",
         "date": null
     },
     {
@@ -5694,7 +5694,7 @@
         "card_no": "2819253946",
         "name": "Nakireddy Srinu",
         "rice": 10,
-        "transaction_status": "Not Done",
+        "transaction_status": "Done",
         "date": null
     },
     {
