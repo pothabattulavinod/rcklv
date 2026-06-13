@@ -1,0 +1,24 @@
+{
+  "shops": [
+    {
+      "shop_no": "0428010",
+      "name": "Seetharampuram",
+      "file": "ekyc0428010.json"
+    },
+    {
+      "shop_no": "0428011",
+      "name": "Kalavacherla",
+      "file": "ekyc0428011.json"
+    },
+    {
+      "shop_no": "0428012",
+      "name": "Kalavacherla",
+      "file": "ekyc0428012.json"
+    },
+    {
+      "shop_no": "0428040",
+      "name": "Kalavacherla",
+      "file": "ekyc0428040.json"
+    }
+  ]
+}
