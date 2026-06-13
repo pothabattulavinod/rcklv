@@ -2,426 +2,129 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Rajanagaram eKYC Dashboard</title>
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-    background:#f4f7fc;
-}
-
-.header{
-    background:linear-gradient(135deg,#0f172a,#1d4ed8);
-    color:white;
-    padding:40px;
-    text-align:center;
-}
-
-.header h1{
-    font-size:32px;
-}
-
-.container{
-    max-width:1400px;
-    margin:auto;
-    padding:25px;
-}
-
-.stats{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-    margin-top:-35px;
-    margin-bottom:30px;
-}
-
-.stat-card{
-    background:white;
-    padding:25px;
-    border-radius:16px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-.stat-title{
-    color:#64748b;
-}
-
-.stat-value{
-    font-size:32px;
-    font-weight:700;
-    color:#2563eb;
-}
-
-.shop-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
-    gap:25px;
-}
-
-.shop-card{
-    background:white;
-    padding:25px;
-    border-radius:20px;
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-    cursor:pointer;
-    transition:.3s;
-}
-
-.shop-card:hover{
-    transform:translateY(-6px);
-}
-
-.shop-icon{
-    width:70px;
-    height:70px;
-    background:linear-gradient(135deg,#2563eb,#1d4ed8);
-    border-radius:18px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:white;
-    font-size:28px;
-}
-
-.shop-number{
-    font-size:28px;
-    font-weight:700;
-    color:#1d4ed8;
-    margin-top:15px;
-}
-
-.shop-name{
-    color:#64748b;
-}
-
-.member-count{
-    margin-top:15px;
-    display:inline-block;
-    padding:8px 15px;
-    border-radius:20px;
-    background:#eff6ff;
-    color:#2563eb;
-}
-
-.view-btn{
-    width:100%;
-    margin-top:20px;
-    border:none;
-    background:#2563eb;
-    color:white;
-    padding:12px;
-    border-radius:10px;
-    cursor:pointer;
-}
-
-#membersSection{
-    display:none;
-}
-
-.topbar{
-    display:flex;
-    justify-content:space-between;
-    gap:20px;
-    margin-bottom:20px;
-    flex-wrap:wrap;
-}
-
-.back-btn{
-    border:none;
-    background:#1d4ed8;
-    color:white;
-    padding:12px 18px;
-    border-radius:10px;
-    cursor:pointer;
-}
-
-.search{
-    padding:12px;
-    border:1px solid #ddd;
-    border-radius:10px;
-    width:350px;
-}
-
-.table-wrapper{
-    background:white;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-}
-
-table{
-    width:100%;
-    border-collapse:collapse;
-}
-
-th{
-    background:#2563eb;
-    color:white;
-    padding:14px;
-}
-
-td{
-    padding:12px;
-    border-bottom:1px solid #eee;
-}
-
-tr:hover{
-    background:#f8fbff;
-}
-
-.rice-link{
-    color:#2563eb;
-    font-weight:600;
-    text-decoration:none;
-}
-
-.badge{
-    padding:4px 10px;
-    border-radius:15px;
-    font-size:12px;
-}
-
-.child{
-    background:#dcfce7;
-    color:#166534;
-}
-
-.adult{
-    background:#dbeafe;
-    color:#1e40af;
-}
-
-.na{
-    background:#f1f5f9;
-    color:#475569;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Segoe UI,Arial,sans-serif;background:#f4f7fb;color:#1e293b}
+.header{background:linear-gradient(135deg,#0f172a,#2563eb);color:#fff;padding:30px;text-align:center}
+.container{max-width:1400px;margin:auto;padding:20px}
+.stats,.shop-grid{display:grid;gap:20px}
+.stats{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-bottom:25px}
+.shop-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card,.shop-card,.table-wrap{background:#fff;border-radius:18px;box-shadow:0 8px 25px rgba(0,0,0,.08)}
+.card{padding:20px}
+.value{font-size:32px;color:#2563eb;font-weight:700}
+.shop-card{padding:22px;cursor:pointer;transition:.25s}
+.shop-card:hover{transform:translateY(-6px)}
+.icon{width:64px;height:64px;border-radius:16px;background:#2563eb;color:#fff;display:flex;align-items:center;justify-content:center;font-size:24px}
+.shop-no{font-size:28px;font-weight:700;color:#2563eb;margin-top:12px}
+.members{margin-top:10px;color:#64748b}
+.btn{margin-top:15px;width:100%;padding:12px;border:none;border-radius:10px;background:#2563eb;color:#fff;cursor:pointer}
+#membersSection{display:none}
+.topbar{display:flex;gap:10px;justify-content:space-between;flex-wrap:wrap;margin-bottom:15px}
+input{padding:12px;border:1px solid #ddd;border-radius:10px;min-width:280px}
+.back{padding:12px 18px;border:none;border-radius:10px;background:#2563eb;color:#fff;cursor:pointer}
+table{width:100%;border-collapse:collapse}
+th{background:#2563eb;color:#fff}
+th,td{padding:12px;text-align:left}
+tr:nth-child(even){background:#f8fafc}
+a{color:#2563eb;text-decoration:none;font-weight:600}
 </style>
 </head>
-
 <body>
-
-<div class="header">
-    <h1>
-        <i class="fa-solid fa-fingerprint"></i>
-        Rajanagaram eKYC Dashboard
-    </h1>
-</div>
-
+<div class="header"><h1><i class="fa-solid fa-fingerprint"></i> Rajanagaram eKYC Dashboard</h1></div>
 <div class="container">
-
 <div id="dashboard">
-
 <div class="stats">
-
-<div class="stat-card">
-<div class="stat-title">Shops</div>
-<div class="stat-value" id="shopCount">0</div>
+<div class="card"><div>Total Shops</div><div class="value" id="shopCount">0</div></div>
+<div class="card"><div>Total Members</div><div class="value" id="memberCount">0</div></div>
 </div>
-
-<div class="stat-card">
-<div class="stat-title">Members</div>
-<div class="stat-value" id="memberCount">0</div>
-</div>
-
-</div>
-
 <div id="shopGrid" class="shop-grid"></div>
-
 </div>
 
 <div id="membersSection">
-
 <div class="topbar">
-
-<button class="back-btn" onclick="showDashboard()">
-← Dashboard
-</button>
-
-<input
-class="search"
-id="search"
-placeholder="Search Rice Card or Name"
-onkeyup="filterTable()">
-
+<button class="back" onclick="showDashboard()">← Dashboard</button>
+<input id="search" placeholder="Search Rice Card or Name" onkeyup="filterTable()">
 </div>
-
-<h2 id="shopTitle"></h2>
-<br>
-
-<div class="table-wrapper">
-
+<h2 id="shopTitle"></h2><br>
+<div class="table-wrap">
 <table>
-
-<thead>
-<tr>
-<th>Rice Card No</th>
-<th>Name</th>
-<th>Age</th>
-<th>Address</th>
-</tr>
-</thead>
-
+<thead><tr><th>Rice Card No</th><th>Name</th><th>Age</th><th>Address</th></tr></thead>
 <tbody id="tbody"></tbody>
-
 </table>
-
 </div>
-
 </div>
-
 </div>
 
 <script>
+const shopFiles=[
+"ekyc0428010.json",
+"ekyc0428011.json",
+"ekyc0428012.json",
+"ekyc0428040.json"
+];
 
-let shops=[];
 let currentData=[];
 
-loadDashboard();
-
 async function loadDashboard(){
+ let total=0;
+ const grid=document.getElementById('shopGrid');
+ grid.innerHTML='';
 
-    const response =
-        await fetch('shops.json');
-
-    const data =
-        await response.json();
-
-    shops = data.shops;
-
-    document.getElementById('shopCount').innerText =
-        shops.length;
-
-    let totalMembers=0;
-
-    const grid =
-        document.getElementById('shopGrid');
-
-    for(const shop of shops){
-
-        const members =
-            await fetch(shop.file)
-            .then(r=>r.json());
-
-        totalMembers += members.length;
-
-        grid.innerHTML += `
-        <div class="shop-card"
-             onclick="loadShop('${shop.shop_no}','${shop.file}')">
-
-            <div class="shop-icon">
-                <i class="fa-solid fa-store"></i>
-            </div>
-
-            <div class="shop-number">
-                ${shop.shop_no}
-            </div>
-
-            <div class="shop-name">
-                ${shop.name}
-            </div>
-
-            <div class="member-count">
-                ${members.length} Members
-            </div>
-
-            <button class="view-btn">
-                View Members
-            </button>
-
-        </div>
-        `;
-    }
-
-    document.getElementById('memberCount').innerText =
-        totalMembers;
+ for(const file of shopFiles){
+   try{
+     const data=await fetch(file).then(r=>r.json());
+     if(!data.length) continue;
+     total+=data.length;
+     const shopNo=data[0].shop_no || file.replace('ekyc','').replace('.json','');
+     grid.innerHTML += `
+      <div class="shop-card" onclick="loadShop('${file}')">
+       <div class="icon"><i class="fa-solid fa-store"></i></div>
+       <div class="shop-no">${shopNo}</div>
+       <div class="members">${data.length} Members</div>
+       <button class="btn">View Members</button>
+      </div>`;
+   }catch(e){console.error(e)}
+ }
+ document.getElementById('shopCount').innerText=shopFiles.length;
+ document.getElementById('memberCount').innerText=total;
 }
 
-async function loadShop(shopNo,file){
-
-    document.getElementById('dashboard').style.display='none';
-    document.getElementById('membersSection').style.display='block';
-
-    document.getElementById('shopTitle').innerText =
-        `Shop ${shopNo}`;
-
-    currentData =
-        await fetch(file)
-        .then(r=>r.json());
-
-    renderTable(currentData);
+async function loadShop(file){
+ document.getElementById('dashboard').style.display='none';
+ document.getElementById('membersSection').style.display='block';
+ currentData=await fetch(file).then(r=>r.json());
+ document.getElementById('shopTitle').innerText='Shop '+(currentData[0]?.shop_no || '');
+ renderTable(currentData);
 }
 
 function renderTable(data){
-
-    document.getElementById('tbody').innerHTML =
-        data.map(row=>`
-
-        <tr>
-
-        <td>
-        <a class="rice-link"
-           target="_blank"
-           href="https://aepos.ap.gov.in/smartepos/Qcodesearch.jsp?rcno=${row.rice_card_no}">
-           ${row.rice_card_no}
-        </a>
-        </td>
-
-        <td>${row.member_name}</td>
-
-        <td>
-        ${
-            row.age==null
-            ? '<span class="badge na">NA</span>'
-            : row.age < 18
-                ? `<span class="badge child">${row.age}</span>`
-                : `<span class="badge adult">${row.age}</span>`
-        }
-        </td>
-
-        <td>${row.address}</td>
-
-        </tr>
-
-        `).join('');
+ document.getElementById('tbody').innerHTML=data.map(r=>`
+ <tr>
+ <td><a target="_blank" href="https://aepos.ap.gov.in/smartepos/Qcodesearch.jsp?rcno=${r.rice_card_no}">${r.rice_card_no}</a></td>
+ <td>${r.member_name||''}</td>
+ <td>${r.age ?? 'NA'}</td>
+ <td>${r.address||''}</td>
+ </tr>`).join('');
 }
 
 function filterTable(){
-
-    const keyword =
-        document.getElementById('search')
-        .value.toLowerCase();
-
-    renderTable(
-        currentData.filter(row =>
-            String(row.rice_card_no).includes(keyword) ||
-            row.member_name.toLowerCase().includes(keyword)
-        )
-    );
+ const q=document.getElementById('search').value.toLowerCase();
+ renderTable(currentData.filter(r=>
+ String(r.rice_card_no).includes(q) ||
+ String(r.member_name).toLowerCase().includes(q)
+ ));
 }
 
 function showDashboard(){
-
-    document.getElementById('membersSection').style.display='none';
-    document.getElementById('dashboard').style.display='block';
+ document.getElementById('membersSection').style.display='none';
+ document.getElementById('dashboard').style.display='block';
 }
 
+loadDashboard();
 </script>
-
 </body>
 </html>
