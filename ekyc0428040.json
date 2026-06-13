@@ -1,0 +1,138 @@
+[
+  {
+    "s_no": 1,
+    "shop_no": "428040",
+    "rice_card_no": "2803115853",
+    "member_name": "Sai Keerthana",
+    "age": 19,
+    "address": "Kalavacharla, 3-103"
+  },
+  {
+    "s_no": 2,
+    "shop_no": "428040",
+    "rice_card_no": "2814573146",
+    "member_name": "Naveti Prasad",
+    "age": 19,
+    "address": "2-178, Gandhi Statue, Kalavacherla, 533297"
+  },
+  {
+    "s_no": 3,
+    "shop_no": "428040",
+    "rice_card_no": "2820398826",
+    "member_name": "Kondapalli Bala Durga Lakshmi Dikshita",
+    "age": 8,
+    "address": "Kalavacherla"
+  },
+  {
+    "s_no": 4,
+    "shop_no": "428040",
+    "rice_card_no": "2820329375",
+    "member_name": "Chikkala Roopa Veera Nandini",
+    "age": 8,
+    "address": "Anuru"
+  },
+  {
+    "s_no": 5,
+    "shop_no": "428040",
+    "rice_card_no": "2808293620",
+    "member_name": "Durga Rao",
+    "age": 10,
+    "address": "2-156, Kalavacharla"
+  },
+  {
+    "s_no": 6,
+    "shop_no": "428040",
+    "rice_card_no": "2808114060",
+    "member_name": "Bujji Babu",
+    "age": 19,
+    "address": "1-220, Kalavacharla"
+  },
+  {
+    "s_no": 7,
+    "shop_no": "428040",
+    "rice_card_no": "2803238819",
+    "member_name": "Nakka Satyavathi",
+    "age": null,
+    "address": "D.No.1-52, Kalavacharla"
+  },
+  {
+    "s_no": 8,
+    "shop_no": "428040",
+    "rice_card_no": "2814699609",
+    "member_name": "Raju",
+    "age": null,
+    "address": "1-17/A, Kalavacherla, Rajanagaram(M), East Godavari(D)"
+  },
+  {
+    "s_no": 9,
+    "shop_no": "428040",
+    "rice_card_no": "2819128769",
+    "member_name": "Prasanna",
+    "age": null,
+    "address": "Kalavacherla"
+  },
+  {
+    "s_no": 10,
+    "shop_no": "428040",
+    "rice_card_no": "2810479736",
+    "member_name": "Pasupuleti Vikend Ra Sai Naidu",
+    "age": 11,
+    "address": "3-20, Kalavacherla"
+  },
+  {
+    "s_no": 11,
+    "shop_no": "428040",
+    "rice_card_no": "2813016477",
+    "member_name": "Pasupuleti Veera Siva Rama Naga Karthik",
+    "age": 7,
+    "address": "Feb-79"
+  },
+  {
+    "s_no": 12,
+    "shop_no": "428040",
+    "rice_card_no": "2819071321",
+    "member_name": "Tokada Papa",
+    "age": null,
+    "address": "Kalavacherla"
+  },
+  {
+    "s_no": 13,
+    "shop_no": "428040",
+    "rice_card_no": "2807565250",
+    "member_name": "Risu Ganesh Veera Sai Kumar",
+    "age": 10,
+    "address": "3-109, Kalavacherla"
+  },
+  {
+    "s_no": 14,
+    "shop_no": "428040",
+    "rice_card_no": "2805924479",
+    "member_name": "Risu Vijay",
+    "age": 45,
+    "address": "D. No. 3-19/1, Kalavacharla"
+  },
+  {
+    "s_no": 15,
+    "shop_no": "428040",
+    "rice_card_no": "2800843007",
+    "member_name": "Santosh Kumar",
+    "age": 19,
+    "address": "Kalavacherla, East Godavari"
+  },
+  {
+    "s_no": 16,
+    "shop_no": "428040",
+    "rice_card_no": "2806819271",
+    "member_name": "Kolli Sravana Durga",
+    "age": 10,
+    "address": "1-125, Kalavacherla, Rajanagaram(M), East Godavari(D)"
+  },
+  {
+    "s_no": 17,
+    "shop_no": "428040",
+    "rice_card_no": "2806360985",
+    "member_name": "Pithani Veera Ganesh",
+    "age": 11,
+    "address": "Kalavachalli, Rajanagaram, D.No 2-185"
+  }
+]
