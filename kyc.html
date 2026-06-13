@@ -152,24 +152,29 @@ max-width:100%;
 .table-wrapper{
 background:white;
 border-radius:18px;
-overflow:auto;
+overflow-x:auto;
+-webkit-overflow-scrolling:touch;
 box-shadow:0 8px 25px rgba(0,0,0,.08);
 }
 
 table{
 width:100%;
 border-collapse:collapse;
+table-layout:fixed;
 }
 
 th{
 background:#2563eb;
 color:white;
-padding:14px;
+padding:12px;
+font-size:14px;
 }
 
 td{
-padding:12px;
+padding:10px;
 border-bottom:1px solid #eee;
+font-size:13px;
+word-wrap:break-word;
 }
 
 tr:hover{
@@ -203,14 +208,6 @@ background:#f1f5f9;
 color:#475569;
 }
 
-.error{
-background:#fee2e2;
-color:#991b1b;
-padding:15px;
-border-radius:10px;
-margin-bottom:15px;
-}
-
 </style>
 </head>
 
@@ -219,7 +216,7 @@ margin-bottom:15px;
 <div class="header">
 <h1>
 <i class="fa-solid fa-fingerprint"></i>
-Rajanagaram eKYC Dashboard
+eKYC Dashboard
 </h1>
 </div>
 
@@ -253,8 +250,7 @@ Rajanagaram eKYC Dashboard
 ← Dashboard
 </button>
 
-<input
-class="search"
+<input class="search"
 id="search"
 placeholder="Search Rice Card No or Name"
 onkeyup="filterTable()">
@@ -271,6 +267,7 @@ onkeyup="filterTable()">
 
 <thead>
 <tr>
+<th>S.No</th>
 <th>Rice Card No</th>
 <th>Name</th>
 <th>Age</th>
@@ -311,22 +308,15 @@ for(const file of shopFiles){
 
 try{
 
-const response = await fetch(
-file + "?v=" + Date.now(),
-{
+const response = await fetch(file + "?v=" + Date.now(), {
 cache:"no-store"
-}
-);
+});
 
-if(!response.ok){
-throw new Error(file);
-}
+if(!response.ok) throw new Error(file);
 
 const data = await response.json();
 
-if(!data || !data.length){
-continue;
-}
+if(!data || !data.length) continue;
 
 loadedShops++;
 totalMembers += data.length;
@@ -360,42 +350,23 @@ View Members
 
 }
 catch(err){
-
 console.error(err);
-
-grid.innerHTML += `
-<div class="shop-card">
-<div class="shop-number">ERROR</div>
-<div>${file}</div>
-</div>
-`;
-
+}
 }
 
-}
-
-document.getElementById("shopCount").innerText =
-loadedShops;
-
-document.getElementById("memberCount").innerText =
-totalMembers;
+document.getElementById("shopCount").innerText = loadedShops;
+document.getElementById("memberCount").innerText = totalMembers;
 
 }
 
 async function loadShop(file){
 
-document.getElementById("dashboard").style.display =
-"none";
+document.getElementById("dashboard").style.display = "none";
+document.getElementById("membersSection").style.display = "block";
 
-document.getElementById("membersSection").style.display =
-"block";
-
-const response = await fetch(
-file + "?v=" + Date.now(),
-{
+const response = await fetch(file + "?v=" + Date.now(), {
 cache:"no-store"
-}
-);
+});
 
 currentData = await response.json();
 
@@ -403,79 +374,100 @@ document.getElementById("shopTitle").innerText =
 "Shop " + (currentData[0].shop_no || "");
 
 renderTable(currentData);
-
 }
 
 function renderTable(data){
 
-document.getElementById("tbody").innerHTML =
-data.map(row => `
+const grouped = {};
 
+data.forEach(row => {
+
+const rc = row.rice_card_no;
+
+if(!grouped[rc]){
+grouped[rc] = [];
+}
+
+grouped[rc].push(row);
+
+});
+
+let html = "";
+let slNo = 1;
+
+Object.entries(grouped)
+.sort((a,b)=>a[0].localeCompare(b[0]))
+.forEach(([rc,members]) => {
+
+if(members.length > 1){
+
+html += `
+<tr style="background:#dbeafe;">
+<td colspan="5">
+<strong>
+👨‍👩‍👧‍👦 ${rc} (${members.length} Members)
+</strong>
+</td>
+</tr>
+`;
+}
+
+members.forEach(row => {
+
+html += `
 <tr>
 
+<td>${slNo++}</td>
+
 <td>
-<a
-class="rice-link"
+<a class="rice-link"
 target="_blank"
 href="https://aepos.ap.gov.in/smartepos/Qcodesearch.jsp?rcno=${row.rice_card_no}">
 ${row.rice_card_no}
 </a>
 </td>
 
-<td>${row.member_name || ""}</td>
+<td>${row.member_name || "-"}</td>
 
 <td>
 ${
 (row.age === null || row.age === undefined)
 ? '<span class="badge na">NA</span>'
 : row.age < 18
-? '<span class="badge child">'+row.age+'</span>'
-: '<span class="badge adult">'+row.age+'</span>'
+? `<span class="badge child">${row.age}</span>`
+: `<span class="badge adult">${row.age}</span>`
 }
 </td>
 
-<td>${row.address || ""}</td>
+<td>${row.address || "-"}</td>
 
 </tr>
+`;
 
-`).join("");
+});
 
+});
+
+document.getElementById("tbody").innerHTML = html;
 }
 
 function filterTable(){
 
 const keyword =
-document.getElementById("search")
-.value
-.toLowerCase();
+document.getElementById("search").value.toLowerCase();
 
 const filtered =
 currentData.filter(row =>
-
-String(row.rice_card_no)
-.toLowerCase()
-.includes(keyword)
-
-||
-
-String(row.member_name || "")
-.toLowerCase()
-.includes(keyword)
-
+String(row.rice_card_no).toLowerCase().includes(keyword) ||
+String(row.member_name || "").toLowerCase().includes(keyword)
 );
 
 renderTable(filtered);
-
 }
 
 function showDashboard(){
-
-document.getElementById("membersSection").style.display =
-"none";
-
-document.getElementById("dashboard").style.display =
-"block";
-
+document.getElementById("membersSection").style.display = "none";
+document.getElementById("dashboard").style.display = "block";
 }
 
 loadDashboard();
