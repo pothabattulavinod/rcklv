@@ -171,8 +171,8 @@
         "card_no": "2800674888",
         "name": "Illa Parvathi",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "15-06-2026"
     },
     {
         "card_no": "2806348784",
@@ -1683,8 +1683,8 @@
         "card_no": "2819134163",
         "name": "Adabala Ramalakshmi",
         "rice": 10,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "15-06-2026"
     },
     {
         "card_no": "2819095331",
@@ -2481,8 +2481,8 @@
         "card_no": "2804948150",
         "name": "Adabala Durga",
         "rice": 10,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "15-06-2026"
     },
     {
         "card_no": "2819292813",
@@ -5253,8 +5253,8 @@
         "card_no": "2820476268",
         "name": "Eduakula Drowpathi",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "15-06-2026"
     },
     {
         "card_no": "2817659626",
@@ -5274,8 +5274,8 @@
         "card_no": "2804438453",
         "name": "Ravulapudi Padmavathi",
         "rice": 15,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "15-06-2026"
     },
     {
         "card_no": "2813942807",
@@ -5897,8 +5897,8 @@
         "card_no": "2821588820",
         "name": "Battina Lakshmi",
         "rice": 20,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "15-06-2026"
     },
     {
         "card_no": "2817120170",
@@ -6086,8 +6086,8 @@
         "card_no": "2822308705",
         "name": "Kurakula Veerababu",
         "rice": 15,
-        "transaction_status": "Not Done",
-        "date": null
+        "transaction_status": "Done",
+        "date": "15-06-2026"
     },
     {
         "card_no": "2822571407",
