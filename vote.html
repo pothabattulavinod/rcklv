@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EPIC iPhone Fix</title>
+
+<style>
+body{
+  margin:0;
+  font-family:system-ui;
+  background:#f5f7fb;
+}
+
+header{
+  background:#2563eb;
+  color:white;
+  padding:15px;
+  text-align:center;
+}
+
+.container{ padding:12px; }
+
+input{
+  width:100%;
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #ccc;
+}
+
+.card{
+  background:white;
+  padding:10px;
+  margin:10px 0;
+  border-radius:10px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+th,td{
+  padding:10px;
+  border-bottom:1px solid #eee;
+  font-size:14px;
+}
+
+th{ background:#1d4ed8; color:white; }
+
+.error{
+  color:red;
+  font-weight:600;
+  margin:10px 0;
+}
+</style>
+</head>
+
+<body>
+
+<header>📊 EPIC Dashboard </header>
+
+<div class="container">
+
+<input id="search" placeholder="Search Name / ID">
+
+<div id="error" class="error"></div>
+
+<div class="card">
+  Total: <span id="total">0</span> |
+  Male: <span id="male">0</span> |
+  Female: <span id="female">0</span>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>SL</th>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Father/Husband</th>
+      <th>House</th>
+      <th>Age</th>
+      <th>Gender</th>
+    </tr>
+  </thead>
+  <tbody id="body"></tbody>
+</table>
+
+</div>
+
+<script>
+
+let data = [];
+
+const URL = "https://raw.githubusercontent.com/pothabattulavinod/rcklv/main/184.json";
+
+/* iPhone SAFE LOAD */
+async function loadData(){
+  try{
+    document.getElementById("error").innerText = "Loading data...";
+
+    const res = await fetch(URL, { cache: "no-store" });
+    if(!res.ok) throw new Error("Network error");
+
+    const json = await res.json();
+
+    data = Array.isArray(json) ? json : [];
+
+    render(data);
+    stats(data);
+
+    document.getElementById("error").innerText = "";
+
+  }catch(err){
+    document.getElementById("error").innerText =
+      "⚠️ Failed to load data. Refresh page or check internet.";
+  }
+}
+
+function render(list){
+  document.getElementById("body").innerHTML =
+  list.map(i=>`
+    <tr>
+      <td>${i.sl_no || ""}</td>
+      <td>${i.id || ""}</td>
+      <td>${i.name || ""}</td>
+      <td>${i.father_or_husband_name || ""}</td>
+      <td>${i.house_number || ""}</td>
+      <td>${i.age || ""}</td>
+      <td>${i.gender || ""}</td>
+    </tr>
+  `).join("");
+}
+
+function stats(list){
+  let m=0,f=0;
+  list.forEach(i=>{
+    if(i.gender==="Male") m++;
+    if(i.gender==="Female") f++;
+  });
+
+  document.getElementById("male").innerText=m;
+  document.getElementById("female").innerText=f;
+  document.getElementById("total").innerText=list.length;
+}
+
+/* SEARCH */
+document.getElementById("search").addEventListener("input", e=>{
+  let v = e.target.value.toLowerCase();
+
+  let filtered = data.filter(i =>
+    (i.name||"").toLowerCase().includes(v) ||
+    (i.id||"").toLowerCase().includes(v)
+  );
+
+  render(filtered);
+  stats(filtered);
+});
+
+loadData();
+
+</script>
+
+</body>
+</html>
