@@ -25,7 +25,7 @@ jobs:
           pip install requests beautifulsoup4
 
       - name: Run Transaction Check
-        run: python junerc.py
+        run: python junerc11.py
 
       - name: Commit and Push
         if: success()
