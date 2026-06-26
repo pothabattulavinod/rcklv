@@ -1,0 +1,55 @@
+name: RC 11 Update june
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update-transactions:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4
+
+      - name: Run Transaction Checker
+        run: python june11update.py
+        # Replace "transactions.py" with your actual Python filename.
+
+      - name: Commit and Push
+        if: success()
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          git config --global user.name "pothabattulavinod"
+          git config --global user.email "vinodyadavpothabattula666@gmail.com"
+
+          if [ ! -f transactions.json ]; then
+            echo "transactions.json not found."
+            exit 1
+          fi
+
+          git add transactions.json
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update RC transactions [skip ci]"
+
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/pothabattulavinod/rcklv.git
+
+          git push origin HEAD:main
