@@ -125,6 +125,12 @@ def fetch(card):
 
         updated = card.copy()
         updated["CURRENT_MONTH_TRANSACTION"] = transaction
+
+        if transaction:
+            print(f"{cardno} -> Updated")
+        else:
+            print(f"{cardno} -> Still Pending")
+
         return updated
 
     except Exception as e:
@@ -139,35 +145,36 @@ with open(INPUT_FILE, "r", encoding="utf-8") as f:
 results = cards.copy()
 server_error = False
 
-# ---------------- Process Only NULL Transactions ----------------
+# ---------------- Only Pending Cards ----------------
 
-def process(index, card):
+pending_cards = [
+    (i, card)
+    for i, card in enumerate(cards)
+    if card.get("CURRENT_MONTH_TRANSACTION") is None
+]
 
-    # Already updated -> keep as-is
-    if card.get("CURRENT_MONTH_TRANSACTION") is not None:
-        return index, card
+print(f"Pending cards to check: {len(pending_cards)}")
 
-    # Fetch only NULL transactions
-    updated = fetch(card)
+# If nothing is pending, exit
+if not pending_cards:
+    print("All cards are already updated.")
+    raise SystemExit(0)
 
-    if updated is None:
-        return index, None
-
-    return index, updated
-
+# ---------------- Process ----------------
 
 with ThreadPoolExecutor(max_workers=5) as executor:
 
-    futures = [
-        executor.submit(process, i, card)
-        for i, card in enumerate(cards)
-    ]
+    futures = {
+        executor.submit(fetch, card): index
+        for index, card in pending_cards
+    }
 
     total = len(futures)
 
     for count, future in enumerate(as_completed(futures), 1):
 
-        index, result = future.result()
+        index = futures[future]
+        result = future.result()
 
         if result is None:
             server_error = True
