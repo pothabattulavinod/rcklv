@@ -7,7 +7,14 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 from bs4 import BeautifulSoup
 
-INPUT_FILE = "noutput11.json"
+# ---------------- Files ----------------
+
+INPUT_FILES = [
+    "noutput11.json",
+    "noutput12.json",
+    "noutput40.json"
+]
+
 OUTPUT_FILE = "transactions.json"
 
 BASE_URL = "https://aepos.ap.gov.in/smartepos/Qcodesearch.jsp?rcno={}"
@@ -61,13 +68,10 @@ print("Checking:", TARGET)
 
 # ---------------- Fetch ----------------
 
-
 def fetch(card):
-
     cardno = card["CARDNO"]
 
     try:
-
         r = session.get(
             BASE_URL.format(cardno),
             timeout=20
@@ -133,11 +137,24 @@ def fetch(card):
         print(f"Server Error: {cardno} -> {e}")
         return None
 
+# ---------------- Read Input Files ----------------
 
-# ---------------- Main ----------------
+cards = []
+order = {}
+index = 0
 
-with open(INPUT_FILE, "r", encoding="utf-8") as f:
-    cards = json.load(f)
+for file in INPUT_FILES:
+    with open(file, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    for card in data:
+        cards.append(card)
+        order[card["CARDNO"]] = index
+        index += 1
+
+print(f"Total cards loaded: {len(cards)}")
+
+# ---------------- Process ----------------
 
 results = []
 server_error = False
@@ -162,21 +179,17 @@ with ThreadPoolExecutor(max_workers=5) as executor:
 
         print(f"[{i}/{total}]")
 
-# Don't overwrite if server has any error
+# ---------------- Save Output ----------------
+
 if server_error:
     print("\nServer not reachable.")
-    print("transactions.json NOT modified.")
+    print(f"{OUTPUT_FILE} NOT modified.")
     raise SystemExit(1)
 
 # Restore original order
-order = {
-    c["CARDNO"]: i
-    for i, c in enumerate(cards)
-}
-
 results.sort(key=lambda x: order[x["CARDNO"]])
 
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
     json.dump(results, f, indent=4, ensure_ascii=False)
 
-print("\ntransactions.json updated successfully.")
+print(f"\n{OUTPUT_FILE} updated successfully.")
