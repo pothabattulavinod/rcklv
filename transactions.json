@@ -3297,7 +3297,17 @@
         "CARDNO": "2805255327",
         "HEAD OF THE FAMILY": "Janapareddy Laxmi",
         "UNITS": "4",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Janapareddy Ramya",
+            "FPS": "0428012",
+            "Month": "July",
+            "Year": "2026",
+            "Date": "05-07-2026",
+            "Type": "Bio",
+            "Rice(KG)": 20.0,
+            "Expected(KG)": 20,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2820444126",
