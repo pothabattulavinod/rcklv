@@ -198,7 +198,7 @@
 </head>
 <body>
 <div class="container">
-<h3>Transactionss Dashboard</h3>
+<h3>Transactionss Dashboardws</h3>
 
 <div class="stats">
   <div class="card"><div class="label">Total</div><span id="total">0</span></div>
@@ -259,10 +259,10 @@ let data = [];
 
 function mapRecords(arr){
   return arr.map(x=>{
-    const t = x?.CURRENT_MONTH_TRANSACTION || null;
+    const t = x && x.CURRENT_MONTH_TRANSACTION ? x.CURRENT_MONTH_TRANSACTION : null;
     return {
       card: x?.CARDNO || "-",
-      name: x?.["HEAD OF THE FAMILY"] || "-",
+      name: x && x["HEAD OF THE FAMILY"] || "-",
       units: Number(x?.UNITS || 0),
       status: (t?.Status === "Done") ? "Done" : "Not Done",
       transaction: t
@@ -324,10 +324,10 @@ function render(){
         <td>${x.name}</td>
         <td>${x.units}</td>
         <td><span class="status-pill ${x.status==='Done'?'done':'pending'}">${x.status}</span></td>
-        <td>${t?.FPS || "-"}</td>
+        <td>${t ? t.FPS : "-"}</td>
         <td>${t?.Date || "-"}</td>
         <td>${t?.Type || "-"}</td>
-        <td>${t?.["Rice(KG)"] ?? "-"}</td>
+        <td>${t && t["Rice(KG)"] != null ? t["Rice(KG)"] : "-"}</td>
       </tr>
     `;
   }).join("");
