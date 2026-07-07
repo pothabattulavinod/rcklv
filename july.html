@@ -14,11 +14,22 @@ body{font-family:Segoe UI,Arial,sans-serif;background:#eef1f6;margin:0}
 table{width:100%;border-collapse:collapse}
 th,td{padding:8px;border-bottom:1px solid #ddd}
 .empty-row td{text-align:center}
+select{padding:6px;margin:12px 0}
 </style>
 </head>
 <body>
 <div class="container">
 <h2>Transactions Dashboard</h2>
+
+<div style="margin:15px 0;">
+<label><strong>Filter:</strong></label>
+<select id="statusFilter" onchange="render()">
+<option value="All">All</option>
+<option value="Done">Done</option>
+<option value="Not Done">Not Done</option>
+</select>
+</div>
+
 <table>
 <thead><tr><th>#</th><th>RC</th><th>Name</th><th>Units</th><th>Status</th></tr></thead>
 <tbody id="tbody"><tr class="empty-row"><td colspan="5">Loading...</td></tr></tbody>
@@ -26,10 +37,9 @@ th,td{padding:8px;border-bottom:1px solid #ddd}
 </div>
 <script>
 var data=[];
-
 function mapRecords(arr){
  return arr.map(function(x){
-   var t=(x && x.CURRENT_MONTH_TRANSACTION)?x.CURRENT_MONTH_TRANSACTION:null;
+   var t=(x&&x.CURRENT_MONTH_TRANSACTION)?x.CURRENT_MONTH_TRANSACTION:null;
    return {
      card:(x&&x.CARDNO)||"-",
      name:(x&&x["HEAD OF THE FAMILY"])||"-",
@@ -38,21 +48,23 @@ function mapRecords(arr){
    };
  });
 }
-
 function render(){
  var tb=document.getElementById("tbody");
- if(!data.length){
+ var filter=document.getElementById("statusFilter").value;
+ var filtered=data.filter(function(x){
+   return filter==="All"||x.status===filter;
+ });
+ if(!filtered.length){
    tb.innerHTML='<tr class="empty-row"><td colspan="5">No data</td></tr>';
    return;
  }
  var h="";
- for(var i=0;i<data.length;i++){
-   var x=data[i];
+ for(var i=0;i<filtered.length;i++){
+   var x=filtered[i];
    h+="<tr><td>"+(i+1)+"</td><td>"+x.card+"</td><td>"+x.name+"</td><td>"+x.units+"</td><td>"+x.status+"</td></tr>";
  }
  tb.innerHTML=h;
 }
-
 async function loadData(){
  var tb=document.getElementById("tbody");
  tb.innerHTML='<tr class="empty-row"><td colspan="5">Loading...</td></tr>';
