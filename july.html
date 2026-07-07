@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -339,72 +341,44 @@ document.getElementById("fpsFilter").addEventListener("change", render);
 document.getElementById("dateFilter").addEventListener("change", render);
 document.getElementById("reloadBtn").addEventListener("click", loadData);
 
-/* FETCH with fallback + more defensive parsing (fixes Safari-on-Android issues) */
-async function fetchWithTimeout(url, ms){
-  const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), ms);
-  try{
-    const res = await fetch(url, { cache: "no-store", signal: controller.signal });
-    clearTimeout(timeoutId);
-    return res;
-  }catch(err){
-    clearTimeout(timeoutId);
-    throw err;
-  }
-}
-
-async function tryLoadFrom(url){
-  const res = await fetchWithTimeout(url, 15000);
-  if(!res.ok){
-    throw new Error("HTTP " + res.status + " " + res.statusText);
-  }
-  // Read as text first, then parse manually — some mobile browsers
-  // (notably Safari) fail res.json() if the Content-Type header
-  // isn't exactly application/json, which raw.githubusercontent.com
-  // doesn't always send correctly.
-  const text = await res.text();
-  return JSON.parse(text);
-}
-
+/* FETCH */
 async function loadData(){
   const tbody = document.getElementById("tbody");
   tbody.innerHTML = `<tr class="empty-row"><td colspan="9">Loading...</td></tr>`;
 
-  const cb = Date.now();
-  // jsDelivr mirrors the GitHub repo, serves correct CORS + content-type
-  // headers, and is far more reliable across browsers than raw.githubusercontent.com.
-  const jsdelivrUrl = "https://cdn.jsdelivr.net/gh/pothabattulavinod/rcklv@main/transactions.json?cb=" + cb;
-  const rawUrl = "https://raw.githubusercontent.com/pothabattulavinod/rcklv/refs/heads/main/transactions.json?cb=" + cb;
+  // cache-buster: avoids iOS Safari serving a stale/empty cached fetch response
+  const baseUrl = "https://raw.githubusercontent.com/pothabattulavinod/rcklv/main/transactions.json";
+  const url = baseUrl + "?cb=" + Date.now();
 
-  let json;
-  let lastErr;
+  try{
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 15000);
 
-  for(const url of [jsdelivrUrl, rawUrl]){
-    try{
-      json = await tryLoadFrom(url);
-      lastErr = null;
-      break;
-    }catch(err){
-      lastErr = err;
+    const res = await fetch(url, {
+      cache: "no-store",
+      signal: controller.signal
+    });
+    clearTimeout(timeoutId);
+
+    if(!res.ok){
+      throw new Error("HTTP " + res.status + " " + res.statusText);
     }
-  }
 
-  if(lastErr){
+    const json = await res.json();
+    const arr =
+      Array.isArray(json) ? json :
+      json?.transactions ||
+      json?.data ||
+      [];
+    data = mapRecords(arr);
+  }catch(err){
     data = [];
-    const msg = (lastErr && lastErr.name === "AbortError")
+    const msg = (err && err.name === "AbortError")
       ? "Request timed out. Check your connection and tap Reload."
-      : ("Failed to load data: " + (lastErr.message || lastErr) + ". Tap Reload to try again.");
+      : ("Failed to load data: " + (err.message || err) + ". Tap Reload to try again.");
     tbody.innerHTML = `<tr class="empty-row"><td colspan="9">${msg}</td></tr>`;
     return;
   }
-
-  const arr =
-    Array.isArray(json) ? json :
-    json?.transactions ||
-    json?.data ||
-    [];
-  data = mapRecords(arr);
-
   populateFilterOptions();
   render();
 }
