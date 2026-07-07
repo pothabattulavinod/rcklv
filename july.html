@@ -1,11 +1,12 @@
 
 
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Transaction Dashboard</title>
+<title>Transactionss Dashboard</title>
 <style>
   :root{
     --bg:#eef1f6;
@@ -197,7 +198,7 @@
 </head>
 <body>
 <div class="container">
-<h3>Transaction Dashboard</h3>
+<h3>Transactionss Dashboard</h3>
 
 <div class="stats">
   <div class="card"><div class="label">Total</div><span id="total">0</span></div>
@@ -353,7 +354,7 @@ async function loadData() {
 
   try {
     const url =
-      "https://cdn.jsdelivr.net/gh/pothabattulavinod/rcklv@main/transactions.json?v=" +
+      "https://pothabattulavinod.github.io/rcklv/transactions.json?v=" +
       Date.now();
 
     const response = await fetch(url, {
@@ -393,7 +394,7 @@ async function loadData() {
   }
 }
 
-window.addEventListener("load", loadData);
+window.addEventListener("DOMContentLoaded", loadData);
 </script>
 </body>
 </html>
