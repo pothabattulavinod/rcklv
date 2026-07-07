@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Transaction Dashboard</title>
+<style>
+  :root{
+    --bg:#eef1f6;
+    --card:#ffffff;
+    --ink:#1f2433;
+    --muted:#6b7280;
+    --accent:#4f46e5;
+    --accent-light:#eef0fe;
+    --done:#16a34a;
+    --pending:#dc2626;
+    --border:#e5e7eb;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    font-family:"Segoe UI",Roboto,Arial,sans-serif;
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+  }
+  .container{
+    max-width:1100px;
+    margin:32px auto;
+    background:var(--card);
+    padding:24px;
+    border-radius:var(--radius);
+    box-shadow:0 4px 24px rgba(17,24,39,0.06);
+  }
+  h3{
+    margin:0 0 16px;
+    font-size:20px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  h3::before{
+    content:"";
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:var(--accent);
+    display:inline-block;
+  }
+  .stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+    margin-bottom:20px;
+  }
+  .card{
+    background:var(--accent-light);
+    padding:16px 10px;
+    text-align:center;
+    border-radius:12px;
+    border:1px solid #e0e3fb;
+  }
+  .card span{
+    display:block;
+    font-size:22px;
+    font-weight:700;
+    color:var(--accent);
+    margin-top:4px;
+  }
+  .card .label{
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    color:var(--muted);
+    font-weight:600;
+  }
+  .controls{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:16px;
+  }
+  .search-box{
+    flex:1;
+    min-width:200px;
+    position:relative;
+  }
+  .search-box input{
+    width:100%;
+    padding:10px 12px 10px 36px;
+    border:1px solid var(--border);
+    border-radius:10px;
+    font-size:14px;
+    outline:none;
+    transition:border-color .15s;
+  }
+  .search-box input:focus{border-color:var(--accent);}
+  .search-box svg{
+    position:absolute;
+    left:11px;
+    top:50%;
+    transform:translateY(-50%);
+    width:16px;
+    height:16px;
+    color:var(--muted);
+  }
+  select{
+    padding:10px 14px;
+    border:1px solid var(--border);
+    border-radius:10px;
+    font-size:14px;
+    background:#fff;
+    color:var(--ink);
+    outline:none;
+    cursor:pointer;
+    min-width:150px;
+  }
+  select:focus{border-color:var(--accent);}
+  .table-container{
+    overflow-x:auto;
+    border:1px solid var(--border);
+    border-radius:12px;
+  }
+  table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:700px;
+  }
+  th,td{
+    padding:10px 12px;
+    font-size:14px;
+    text-align:left;
+    border-bottom:1px solid var(--border);
+  }
+  th{
+    background:#f9fafb;
+    font-weight:600;
+    color:var(--muted);
+    text-transform:uppercase;
+    font-size:11px;
+    letter-spacing:.04em;
+  }
+  tbody tr:hover{background:#f9fafb;}
+  tbody tr:last-child td{border-bottom:none;}
+  .status-pill{
+    display:inline-block;
+    padding:3px 10px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:600;
+  }
+  .done{color:var(--done);background:#dcfce7;}
+  .pending{color:var(--pending);background:#fee2e2;}
+  .tx-details{
+    margin-top:4px;
+    font-size:11px;
+    color:var(--muted);
+    line-height:1.5;
+  }
+  .tx-details b{color:var(--ink);}
+  .empty-row td{
+    text-align:center;
+    color:var(--muted);
+    padding:24px;
+    font-size:14px;
+  }
+  tfoot td{
+    padding:10px 12px;
+    font-size:14px;
+    font-weight:700;
+    background:#f9fafb;
+    border-top:2px solid var(--border);
+  }
+  a.card-link{
+    color:var(--accent);
+    text-decoration:none;
+    font-weight:600;
+  }
+  a.card-link:hover{
+    text-decoration:underline;
+  }
+  .reload-btn{
+    padding:10px 16px;
+    border:1px solid var(--border);
+    border-radius:10px;
+    background:#fff;
+    color:var(--accent);
+    font-weight:600;
+    font-size:14px;
+    cursor:pointer;
+  }
+  .reload-btn:active{background:var(--accent-light);}
+</style>
+</head>
+<body>
+<div class="container">
+<h3>Transaction Dashboard</h3>
+
+<div class="stats">
+  <div class="card"><div class="label">Total</div><span id="total">0</span></div>
+  <div class="card"><div class="label">Done</div><span id="done">0</span></div>
+  <div class="card"><div class="label">Not Done</div><span id="notdone">0</span></div>
+  <div class="card"><div class="label">Units</div><span id="units">0</span></div>
+</div>
+
+<div class="controls">
+  <div class="search-box">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+    </svg>
+    <input id="searchInput" type="text" placeholder="Search by name...">
+  </div>
+  <select id="statusFilter">
+    <option value="all">All Statuses</option>
+    <option value="Done">Done</option>
+    <option value="Not Done">Not Done</option>
+  </select>
+  <select id="fpsFilter">
+    <option value="all">All FPS</option>
+  </select>
+  <select id="dateFilter">
+    <option value="all">All Dates</option>
+  </select>
+  <button class="reload-btn" id="reloadBtn" type="button">Reload</button>
+</div>
+
+<div class="table-container">
+<table>
+<thead>
+<tr>
+  <th>Sl No</th>
+  <th>RC</th>
+  <th>Name</th>
+  <th>Units</th>
+  <th>Status</th>
+  <th>FPS</th>
+  <th>Date</th>
+  <th>Type</th>
+  <th>Rice (KG)</th>
+</tr>
+</thead>
+<tbody id="tbody"></tbody>
+<tfoot>
+<tr>
+  <td colspan="3" style="text-align:right">Total Units</td>
+  <td id="footerUnits">0</td>
+  <td colspan="5"></td>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+<script>
+let data = [];
+
+function mapRecords(arr){
+  return arr.map(x=>{
+    const t = x?.CURRENT_MONTH_TRANSACTION || null;
+    return {
+      card: x?.CARDNO || "-",
+      name: x?.["HEAD OF THE FAMILY"] || "-",
+      units: Number(x?.UNITS || 0),
+      status: (t?.Status === "Done") ? "Done" : "Not Done",
+      transaction: t
+    };
+  });
+}
+
+function getFiltered(){
+  const q = document.getElementById("searchInput").value.trim().toLowerCase();
+  const status = document.getElementById("statusFilter").value;
+  const fps = document.getElementById("fpsFilter").value;
+  const dateVal = document.getElementById("dateFilter").value;
+  return data.filter(x=>{
+    const matchesName = q === "" || (x.name || "").toLowerCase().includes(q);
+    const matchesStatus = status === "all" || x.status === status;
+    const matchesFps = fps === "all" || (x.transaction?.FPS || "") === fps;
+    const matchesDate = dateVal === "all" || (x.transaction?.Date || "") === dateVal;
+    return matchesName && matchesStatus && matchesFps && matchesDate;
+  });
+}
+
+function populateFilterOptions(){
+  const fpsValues = [...new Set(data.map(x=>x.transaction?.FPS).filter(Boolean))].sort();
+  const dateValues = [...new Set(data.map(x=>x.transaction?.Date).filter(Boolean))].sort();
+
+  const fpsSelect = document.getElementById("fpsFilter");
+  fpsSelect.innerHTML = `<option value="all">All FPS</option>` +
+    fpsValues.map(v=>`<option value="${v}">${v}</option>`).join("");
+
+  const dateSelect = document.getElementById("dateFilter");
+  dateSelect.innerHTML = `<option value="all">All Dates</option>` +
+    dateValues.map(v=>`<option value="${v}">${v}</option>`).join("");
+}
+
+function render(){
+  const filtered = getFiltered();
+
+  document.getElementById("total").innerText = data.length;
+  document.getElementById("done").innerText =
+    data.filter(x=>x.status==="Done").length;
+  document.getElementById("notdone").innerText =
+    data.filter(x=>x.status!=="Done").length;
+  document.getElementById("units").innerText =
+    data.reduce((a,b)=>a+(b.units||0),0);
+
+  const tbody = document.getElementById("tbody");
+  if(filtered.length === 0){
+    tbody.innerHTML = `<tr class="empty-row"><td colspan="9">No matching records found</td></tr>`;
+    document.getElementById("footerUnits").innerText = 0;
+    return;
+  }
+
+  tbody.innerHTML = filtered.map((x,i)=>{
+    const t = x.transaction;
+    return `
+      <tr>
+        <td>${i+1}</td>
+        <td><a class="card-link" href="https://aepos.ap.gov.in/smartepos/Qcodesearch.jsp?rcno=${encodeURIComponent(x.card)}" target="_blank" rel="noopener">${x.card}</a></td>
+        <td>${x.name}</td>
+        <td>${x.units}</td>
+        <td><span class="status-pill ${x.status==='Done'?'done':'pending'}">${x.status}</span></td>
+        <td>${t?.FPS || "-"}</td>
+        <td>${t?.Date || "-"}</td>
+        <td>${t?.Type || "-"}</td>
+        <td>${t?.["Rice(KG)"] ?? "-"}</td>
+      </tr>
+    `;
+  }).join("");
+
+  document.getElementById("footerUnits").innerText =
+    filtered.reduce((a,b)=>a+(b.units||0),0);
+}
+
+document.getElementById("searchInput").addEventListener("input", render);
+document.getElementById("statusFilter").addEventListener("change", render);
+document.getElementById("fpsFilter").addEventListener("change", render);
+document.getElementById("dateFilter").addEventListener("change", render);
+document.getElementById("reloadBtn").addEventListener("click", loadData);
+
+/* FETCH with fallback + more defensive parsing (fixes Safari-on-Android issues) */
+async function fetchWithTimeout(url, ms){
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), ms);
+  try{
+    const res = await fetch(url, { cache: "no-store", signal: controller.signal });
+    clearTimeout(timeoutId);
+    return res;
+  }catch(err){
+    clearTimeout(timeoutId);
+    throw err;
+  }
+}
+
+async function tryLoadFrom(url){
+  const res = await fetchWithTimeout(url, 15000);
+  if(!res.ok){
+    throw new Error("HTTP " + res.status + " " + res.statusText);
+  }
+  // Read as text first, then parse manually — some mobile browsers
+  // (notably Safari) fail res.json() if the Content-Type header
+  // isn't exactly application/json, which raw.githubusercontent.com
+  // doesn't always send correctly.
+  const text = await res.text();
+  return JSON.parse(text);
+}
+
+async function loadData(){
+  const tbody = document.getElementById("tbody");
+  tbody.innerHTML = `<tr class="empty-row"><td colspan="9">Loading...</td></tr>`;
+
+  const cb = Date.now();
+  // jsDelivr mirrors the GitHub repo, serves correct CORS + content-type
+  // headers, and is far more reliable across browsers than raw.githubusercontent.com.
+  const jsdelivrUrl = "https://cdn.jsdelivr.net/gh/pothabattulavinod/rcklv@main/transactions.json?cb=" + cb;
+  const rawUrl = "https://raw.githubusercontent.com/pothabattulavinod/rcklv/refs/heads/main/transactions.json?cb=" + cb;
+
+  let json;
+  let lastErr;
+
+  for(const url of [jsdelivrUrl, rawUrl]){
+    try{
+      json = await tryLoadFrom(url);
+      lastErr = null;
+      break;
+    }catch(err){
+      lastErr = err;
+    }
+  }
+
+  if(lastErr){
+    data = [];
+    const msg = (lastErr && lastErr.name === "AbortError")
+      ? "Request timed out. Check your connection and tap Reload."
+      : ("Failed to load data: " + (lastErr.message || lastErr) + ". Tap Reload to try again.");
+    tbody.innerHTML = `<tr class="empty-row"><td colspan="9">${msg}</td></tr>`;
+    return;
+  }
+
+  const arr =
+    Array.isArray(json) ? json :
+    json?.transactions ||
+    json?.data ||
+    [];
+  data = mapRecords(arr);
+
+  populateFilterOptions();
+  render();
+}
+
+window.onload = function(){
+  loadData();
+};
+</script>
+</body>
+</html>
