@@ -217,7 +217,17 @@
         "CARDNO": "2810209729",
         "HEAD OF THE FAMILY": "Thummuri Karuna",
         "UNITS": "4",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Thummuri Varesh",
+            "FPS": "0428012",
+            "Month": "July",
+            "Year": "2026",
+            "Date": "09-07-2026",
+            "Type": "Bio",
+            "Rice(KG)": 20.0,
+            "Expected(KG)": 20,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2804513939",
@@ -6807,7 +6817,17 @@
         "CARDNO": "2819228670",
         "HEAD OF THE FAMILY": "Osetti Mydamma",
         "UNITS": "5",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Osetti Lova Kumari",
+            "FPS": "0417004",
+            "Month": "July",
+            "Year": "2026",
+            "Date": "09-07-2026",
+            "Type": "Bio",
+            "Rice(KG)": 25.0,
+            "Expected(KG)": 25,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2818362072",
@@ -18617,7 +18637,17 @@
         "CARDNO": "2806349938",
         "HEAD OF THE FAMILY": "Pasumarthy Venkata Ratnamma",
         "UNITS": "1",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Pasumarthy Venkata Ratnamma",
+            "FPS": "0481079",
+            "Month": "July",
+            "Year": "2026",
+            "Date": "09-07-2026",
+            "Type": "Bio",
+            "Rice(KG)": 5.0,
+            "Expected(KG)": 5,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2802610276",
