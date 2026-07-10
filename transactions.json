@@ -5232,7 +5232,7 @@
     {
         "CARDNO": "2819252079",
         "HEAD OF THE FAMILY": "Peddireddy Nagamani",
-        "UNITS": "4",
+        "UNITS": "3",
         "CURRENT_MONTH_TRANSACTION": {
             "Member": "Peddireddy Nagamani",
             "FPS": "0428012",
@@ -5241,7 +5241,7 @@
             "Date": "04-07-2026",
             "Type": "Bio",
             "Rice(KG)": 15.0,
-            "Expected(KG)": 20,
+            "Expected(KG)": 15,
             "Status": "Not Done"
         }
     },
@@ -9368,7 +9368,7 @@
     {
         "CARDNO": "2813670357",
         "HEAD OF THE FAMILY": "Penumakula Surya Naga Ratnam",
-        "UNITS": "4",
+        "UNITS": "3",
         "CURRENT_MONTH_TRANSACTION": {
             "Member": "Penumakula Surya Naga Ratnam",
             "FPS": "0415042",
@@ -9377,8 +9377,8 @@
             "Date": "08-07-2026",
             "Type": "Bio",
             "Rice(KG)": 15.0,
-            "Expected(KG)": 20,
-            "Status": "Not Done"
+            "Expected(KG)": 15,
+            "Status": "Done"
         }
     },
     {
@@ -12324,7 +12324,7 @@
     {
         "CARDNO": "2805047044",
         "HEAD OF THE FAMILY": "Kollam Papa",
-        "UNITS": "4",
+        "UNITS": "3",
         "CURRENT_MONTH_TRANSACTION": {
             "Member": "Kollam Papa",
             "FPS": "0428040",
@@ -12333,8 +12333,8 @@
             "Date": "05-07-2026",
             "Type": "Bio",
             "Rice(KG)": 15.0,
-            "Expected(KG)": 20,
-            "Status": "Not Done"
+            "Expected(KG)": 15,
+            "Status": "Done"
         }
     },
     {
@@ -14136,7 +14136,7 @@
     {
         "CARDNO": "2810031101",
         "HEAD OF THE FAMILY": "Pilli Adhi Lakshmi",
-        "UNITS": "4",
+        "UNITS": "3",
         "CURRENT_MONTH_TRANSACTION": {
             "Member": "Pilli Simhachalam",
             "FPS": "0428011",
@@ -14145,8 +14145,8 @@
             "Date": "04-07-2026",
             "Type": "Bio",
             "Rice(KG)": 15.0,
-            "Expected(KG)": 20,
-            "Status": "Not Done"
+            "Expected(KG)": 15,
+            "Status": "Done"
         }
     },
     {
@@ -17346,7 +17346,7 @@
     {
         "CARDNO": "2814623179",
         "HEAD OF THE FAMILY": "Penumakula Venkatalakshmi",
-        "UNITS": "2",
+        "UNITS": "1",
         "CURRENT_MONTH_TRANSACTION": {
             "Member": "Penumakula Satyanarayana",
             "FPS": "0428011",
@@ -17355,8 +17355,8 @@
             "Date": "08-07-2026",
             "Type": "Bio",
             "Rice(KG)": 5.0,
-            "Expected(KG)": 10,
-            "Status": "Not Done"
+            "Expected(KG)": 5,
+            "Status": "Done"
         }
     },
     {
