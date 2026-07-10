@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Transactions Dashboard</title>
+<style>
+body{font-family:Segoe UI,Arial,sans-serif;background:#eef1f6;margin:0}
+.container{max-width:1100px;margin:32px auto;background:#fff;padding:24px;border-radius:12px}
+table{width:100%;border-collapse:collapse}
+th,td{padding:8px;border-bottom:1px solid #ddd}
+.empty-row td{text-align:center}
+select{padding:6px;margin:12px 0}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Transactions Dashboard</h2>
+
+<div style="margin:15px 0;">
+<label><strong>Filter:</strong></label>
+<select id="statusFilter" onchange="render()">
+<option value="All">All</option>
+<option value="Done">Done</option>
+<option value="Not Done">Not Done</option>
+</select>
+</div>
+
+<table>
+<thead><tr><th>#</th><th>RC</th><th>Name</th><th>Units</th><th>Status</th></tr></thead>
+<tbody id="tbody"><tr class="empty-row"><td colspan="5">Loading...</td></tr></tbody>
+</table>
+</div>
+<script>
+var data=[];
+function mapRecords(arr){
+ return arr.map(function(x){
+   var t=(x&&x.CURRENT_MONTH_TRANSACTION)?x.CURRENT_MONTH_TRANSACTION:null;
+   return {
+     card:(x&&x.CARDNO)||"-",
+     name:(x&&x["HEAD OF THE FAMILY"])||"-",
+     units:Number((x&&x.UNITS)||0),
+     status:(t&&t.Status==="Done")?"Done":"Not Done"
+   };
+ });
+}
+function render(){
+ var tb=document.getElementById("tbody");
+ var filter=document.getElementById("statusFilter").value;
+ var filtered=data.filter(function(x){
+   return filter==="All"||x.status===filter;
+ });
+ if(!filtered.length){
+   tb.innerHTML='<tr class="empty-row"><td colspan="5">No data</td></tr>';
+   return;
+ }
+ var h="";
+ for(var i=0;i<filtered.length;i++){
+   var x=filtered[i];
+   h+="<tr><td>"+(i+1)+"</td><td>"+x.card+"</td><td>"+x.name+"</td><td>"+x.units+"</td><td>"+x.status+"</td></tr>";
+ }
+ tb.innerHTML=h;
+}
+async function loadData(){
+ var tb=document.getElementById("tbody");
+ tb.innerHTML='<tr class="empty-row"><td colspan="5">Loading...</td></tr>';
+ try{
+   var url="https://pothabattulavinod.github.io/rc/transactions.json?ts="+Date.now();
+   var controller=new AbortController();
+   var timer=setTimeout(function(){controller.abort();},10000);
+   var response=await fetch(url,{cache:"reload",signal:controller.signal});
+   clearTimeout(timer);
+   if(!response.ok) throw new Error("HTTP "+response.status);
+   var text=await response.text();
+   if(!text.trim()) throw new Error("Empty response");
+   var json=JSON.parse(text);
+   if(!Array.isArray(json)) throw new Error("Invalid JSON");
+   data=mapRecords(json);
+   render();
+ }catch(e){
+   tb.innerHTML='<tr class="empty-row"><td colspan="5">Failed to load: '+e.message+'</td></tr>';
+ }
+}
+window.onload=loadData;
+</script>
+</body>
+</html>
