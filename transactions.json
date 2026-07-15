@@ -275,7 +275,17 @@
         "CARDNO": "2816816972",
         "HEAD OF THE FAMILY": "Bommathula Nagamani",
         "UNITS": "2",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Bommathula Mahalakshmi",
+            "FPS": "0426025",
+            "Month": "July",
+            "Year": "2026",
+            "Date": "15-07-2026",
+            "Type": "Bio",
+            "Rice(KG)": 10.0,
+            "Expected(KG)": 10,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2809245422",
@@ -559,7 +569,17 @@
         "CARDNO": "2822035154",
         "HEAD OF THE FAMILY": "Ganapatiraju Lakshmi",
         "UNITS": "1",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Ganapatiraju Lakshmi",
+            "FPS": "0428040",
+            "Month": "July",
+            "Year": "2026",
+            "Date": "15-07-2026",
+            "Type": "Bio",
+            "Rice(KG)": 5.0,
+            "Expected(KG)": 5,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2816344748",
@@ -4077,7 +4097,17 @@
         "CARDNO": "2809309822",
         "HEAD OF THE FAMILY": "Osetti Manga",
         "UNITS": "4",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Osetti Manga",
+            "FPS": "0428040",
+            "Month": "July",
+            "Year": "2026",
+            "Date": "15-07-2026",
+            "Type": "Bio",
+            "Rice(KG)": 20.0,
+            "Expected(KG)": 20,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2813488216",
@@ -4163,7 +4193,17 @@
         "CARDNO": "2806356739",
         "HEAD OF THE FAMILY": "Avala Bujjibabu",
         "UNITS": "2",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Avala Bujjibabu",
+            "FPS": "0428040",
+            "Month": "July",
+            "Year": "2026",
+            "Date": "15-07-2026",
+            "Type": "Bio",
+            "Rice(KG)": 10.0,
+            "Expected(KG)": 10,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2807135309",
@@ -11923,7 +11963,17 @@
         "CARDNO": "2805683529",
         "HEAD OF THE FAMILY": "Kakileti Lilly Grace",
         "UNITS": "3",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Kakileti Syam",
+            "FPS": "0428040",
+            "Month": "July",
+            "Year": "2026",
+            "Date": "15-07-2026",
+            "Type": "Bio",
+            "Rice(KG)": 15.0,
+            "Expected(KG)": 15,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2820426668",
