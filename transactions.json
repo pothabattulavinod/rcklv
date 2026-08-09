@@ -1365,7 +1365,17 @@
         "CARDNO": "2811006225",
         "HEAD OF THE FAMILY": "Dude Venkata Ramana",
         "UNITS": "1",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Dude Venkata Ramana",
+            "FPS": "0429033",
+            "Month": "August",
+            "Year": "2026",
+            "Date": "09-08-2026",
+            "Type": "Bio",
+            "Rice(KG)": 5.0,
+            "Expected(KG)": 5,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2814921394",
@@ -7365,7 +7375,17 @@
         "CARDNO": "2808196799",
         "HEAD OF THE FAMILY": "Pithani Appala Narasamma",
         "UNITS": "2",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Pithani Appala Narasamma",
+            "FPS": "0428012",
+            "Month": "August",
+            "Year": "2026",
+            "Date": "09-08-2026",
+            "Type": "Bio",
+            "Rice(KG)": 10.0,
+            "Expected(KG)": 10,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2816701535",
@@ -8521,7 +8541,17 @@
         "CARDNO": "2801790543",
         "HEAD OF THE FAMILY": "Ketha Rajeswari",
         "UNITS": "1",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Ketha Rajeswari",
+            "FPS": "0416037",
+            "Month": "August",
+            "Year": "2026",
+            "Date": "09-08-2026",
+            "Type": "Bio",
+            "Rice(KG)": 5.0,
+            "Expected(KG)": 5,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2809742391",
@@ -14599,7 +14629,17 @@
         "CARDNO": "2816390986",
         "HEAD OF THE FAMILY": "Mallela Siva Kumari",
         "UNITS": "4",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Mallela Chakram",
+            "FPS": "0428012",
+            "Month": "August",
+            "Year": "2026",
+            "Date": "09-08-2026",
+            "Type": "Bio",
+            "Rice(KG)": 20.0,
+            "Expected(KG)": 20,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2813086860",
