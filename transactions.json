@@ -383,7 +383,17 @@
         "CARDNO": "2822482489",
         "HEAD OF THE FAMILY": "Uddagiri Santha",
         "UNITS": "1",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Uddagiri Santha",
+            "FPS": "0428012",
+            "Month": "September",
+            "Year": "2026",
+            "Date": "27-08-2026",
+            "Type": "Bio",
+            "Rice(KG)": 5.0,
+            "Expected(KG)": 5,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2802711263",
