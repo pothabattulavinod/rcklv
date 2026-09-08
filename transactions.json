@@ -7395,7 +7395,17 @@
         "CARDNO": "2819283338",
         "HEAD OF THE FAMILY": "Tammana Buchi Ramadevi",
         "UNITS": "4",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Tammana Karthikeya",
+            "FPS": "0428011",
+            "Month": "September",
+            "Year": "2026",
+            "Date": "08-09-2026",
+            "Type": "Bio",
+            "Rice(KG)": 20.0,
+            "Expected(KG)": 20,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2819223076",
@@ -7755,7 +7765,17 @@
         "CARDNO": "2820444324",
         "HEAD OF THE FAMILY": "Tammana Ayyappa",
         "UNITS": "3",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Tammana Ayyappa",
+            "FPS": "0428011",
+            "Month": "September",
+            "Year": "2026",
+            "Date": "08-09-2026",
+            "Type": "Bio",
+            "Rice(KG)": 15.0,
+            "Expected(KG)": 15,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2819235802",
