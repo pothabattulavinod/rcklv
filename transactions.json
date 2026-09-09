@@ -960,7 +960,7 @@
     {
         "CARDNO": "2819220343",
         "HEAD OF THE FAMILY": "Rayudu Krishna Veni",
-        "UNITS": "4",
+        "UNITS": "3",
         "CURRENT_MONTH_TRANSACTION": {
             "Member": "Rayudu Krishna Veni",
             "FPS": "0428011",
@@ -969,8 +969,8 @@
             "Date": "06-09-2026",
             "Type": "Bio",
             "Rice(KG)": 15.0,
-            "Expected(KG)": 20,
-            "Status": "Not Done"
+            "Expected(KG)": 15,
+            "Status": "Done"
         }
     },
     {
