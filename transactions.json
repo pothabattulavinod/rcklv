@@ -17049,7 +17049,17 @@
         "CARDNO": "2813476136",
         "HEAD OF THE FAMILY": "Pasupuleti Sri Lakshmi",
         "UNITS": "4",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Pasupuleti Srinu Kumar",
+            "FPS": "0428012",
+            "Month": "September",
+            "Year": "2026",
+            "Date": "10-09-2026",
+            "Type": "Bio",
+            "Rice(KG)": 20.0,
+            "Expected(KG)": 20,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2814483610",
