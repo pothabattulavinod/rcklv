@@ -2771,7 +2771,17 @@
         "CARDNO": "2812257096",
         "HEAD OF THE FAMILY": "Sangeetha Lakshmi",
         "UNITS": "3",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Sangeetha Lakshmi",
+            "FPS": "0428012",
+            "Month": "September",
+            "Year": "2026",
+            "Date": "11-09-2026",
+            "Type": "Bio",
+            "Rice(KG)": 15.0,
+            "Expected(KG)": 15,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2818546133",
@@ -5837,7 +5847,17 @@
         "CARDNO": "2811407887",
         "HEAD OF THE FAMILY": "Muchchakarla Ganga",
         "UNITS": "1",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Muchchakarla Ganga",
+            "FPS": "0428012",
+            "Month": "September",
+            "Year": "2026",
+            "Date": "11-09-2026",
+            "Type": "Bio",
+            "Rice(KG)": 5.0,
+            "Expected(KG)": 5,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2820422844",
@@ -8089,7 +8109,17 @@
         "CARDNO": "2806451268",
         "HEAD OF THE FAMILY": "Nalamolu Naga Mani",
         "UNITS": "2",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Nalamolu Shyam Babu",
+            "FPS": "0428012",
+            "Month": "September",
+            "Year": "2026",
+            "Date": "11-09-2026",
+            "Type": "Bio",
+            "Rice(KG)": 10.0,
+            "Expected(KG)": 10,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2805947365",
