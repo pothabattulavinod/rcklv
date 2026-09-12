@@ -7669,7 +7669,17 @@
         "CARDNO": "2822542178",
         "HEAD OF THE FAMILY": "Pilla Subrahmanyam",
         "UNITS": "3",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Pilla Subrahmanyam",
+            "FPS": "0428011",
+            "Month": "September",
+            "Year": "2026",
+            "Date": "12-09-2026",
+            "Type": "Bio",
+            "Rice(KG)": 15.0,
+            "Expected(KG)": 15,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2819336148",
@@ -17523,7 +17533,17 @@
         "CARDNO": "2806132896",
         "HEAD OF THE FAMILY": "Sadanala Shirisha",
         "UNITS": "4",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Sadanala Jayavardhan",
+            "FPS": "0428011",
+            "Month": "September",
+            "Year": "2026",
+            "Date": "12-09-2026",
+            "Type": "Bio",
+            "Rice(KG)": 20.0,
+            "Expected(KG)": 20,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2811382217",
@@ -17813,7 +17833,17 @@
         "CARDNO": "2805497136",
         "HEAD OF THE FAMILY": "Challa Chittamma",
         "UNITS": "3",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Challa Chittamma",
+            "FPS": "0428011",
+            "Month": "September",
+            "Year": "2026",
+            "Date": "12-09-2026",
+            "Type": "Bio",
+            "Rice(KG)": 15.0,
+            "Expected(KG)": 15,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2807816251",
