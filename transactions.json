@@ -10033,7 +10033,17 @@
         "CARDNO": "2809725999",
         "HEAD OF THE FAMILY": "Gollapalli Aravalu",
         "UNITS": "2",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Gollapalli Mani",
+            "FPS": "0428011",
+            "Month": "October",
+            "Year": "2026",
+            "Date": "01-10-2026",
+            "Type": "Bio",
+            "Rice(KG)": 10.0,
+            "Expected(KG)": 10,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2811350331",
@@ -12029,7 +12039,17 @@
         "CARDNO": "2816645266",
         "HEAD OF THE FAMILY": "Ganguluri Devi",
         "UNITS": "4",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Ganguluri Aruna",
+            "FPS": "0602017",
+            "Month": "October",
+            "Year": "2026",
+            "Date": "01-10-2026",
+            "Type": "Bio",
+            "Rice(KG)": 20.0,
+            "Expected(KG)": 20,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2813880674",
