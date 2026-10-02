@@ -8879,7 +8879,17 @@
         "CARDNO": "2810160382",
         "HEAD OF THE FAMILY": "Chinthapenta Pushpalatha",
         "UNITS": "2",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Chinthapenta Venkateswarlu",
+            "FPS": "0428012",
+            "Month": "October",
+            "Year": "2026",
+            "Date": "02-10-2026",
+            "Type": "Bio",
+            "Rice(KG)": 10.0,
+            "Expected(KG)": 10,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2817674715",
@@ -13491,7 +13501,17 @@
         "CARDNO": "2820749621",
         "HEAD OF THE FAMILY": "Miriyala Jakarayya",
         "UNITS": "4",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Miriyala Jakarayya",
+            "FPS": "0428006",
+            "Month": "October",
+            "Year": "2026",
+            "Date": "02-10-2026",
+            "Type": "Bio",
+            "Rice(KG)": 20.0,
+            "Expected(KG)": 20,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2822034965",
@@ -16801,7 +16821,17 @@
         "CARDNO": "2819211581",
         "HEAD OF THE FAMILY": "Thelu Veera Venkata Durga Rao",
         "UNITS": "1",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Thelu Veera Venkata Durga Rao",
+            "FPS": "0428011",
+            "Month": "October",
+            "Year": "2026",
+            "Date": "02-10-2026",
+            "Type": "Bio",
+            "Rice(KG)": 5.0,
+            "Expected(KG)": 5,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2819217295",
