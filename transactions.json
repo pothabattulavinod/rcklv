@@ -10261,7 +10261,17 @@
         "CARDNO": "2808616399",
         "HEAD OF THE FAMILY": "Pasupuleti Suryavathi",
         "UNITS": "2",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Pasupuleti Eswarudu",
+            "FPS": "0428012",
+            "Month": "October",
+            "Year": "2026",
+            "Date": "09-10-2026",
+            "Type": "Bio",
+            "Rice(KG)": 10.0,
+            "Expected(KG)": 10,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2808743371",
