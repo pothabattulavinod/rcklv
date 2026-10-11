@@ -17925,7 +17925,17 @@
         "CARDNO": "2818215741",
         "HEAD OF THE FAMILY": "Kopparthi Acchutha Mani",
         "UNITS": "2",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Kopparthi Satyanarayana",
+            "FPS": "0428040",
+            "Month": "October",
+            "Year": "2026",
+            "Date": "11-10-2026",
+            "Type": "Bio",
+            "Rice(KG)": 10.0,
+            "Expected(KG)": 10,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2815621919",
