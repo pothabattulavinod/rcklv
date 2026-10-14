@@ -12813,7 +12813,17 @@
         "CARDNO": "2819185814",
         "HEAD OF THE FAMILY": "Pasalapudi Sitha",
         "UNITS": "4",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "PASALAPUDI KRISHNA",
+            "FPS": "0428010",
+            "Month": "October",
+            "Year": "2026",
+            "Date": "14-10-2026",
+            "Type": "Bio",
+            "Rice(KG)": 20.0,
+            "Expected(KG)": 20,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2808816916",
@@ -14137,7 +14147,17 @@
         "CARDNO": "2822618085",
         "HEAD OF THE FAMILY": "Kokkiripati Sirisha",
         "UNITS": 4,
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Kokkiripati Veerraju",
+            "FPS": "0428012",
+            "Month": "October",
+            "Year": "2026",
+            "Date": "14-10-2026",
+            "Type": "Bio",
+            "Rice(KG)": 20.0,
+            "Expected(KG)": 20,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2822189454",
