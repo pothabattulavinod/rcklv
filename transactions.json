@@ -10683,7 +10683,17 @@
         "CARDNO": "2807935407",
         "HEAD OF THE FAMILY": "Durga Sunitha",
         "UNITS": "4",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Durga Sunitha",
+            "FPS": "0428011",
+            "Month": "October",
+            "Year": "2026",
+            "Date": "15-10-2026",
+            "Type": "Bio",
+            "Rice(KG)": 20.0,
+            "Expected(KG)": 20,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2803910407",
@@ -18927,7 +18937,17 @@
         "CARDNO": "2803115853",
         "HEAD OF THE FAMILY": "Bonthu Naga Lakshmi",
         "UNITS": "4",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Sai Keerthana",
+            "FPS": "0428012",
+            "Month": "October",
+            "Year": "2026",
+            "Date": "15-10-2026",
+            "Type": "Bio",
+            "Rice(KG)": 20.0,
+            "Expected(KG)": 20,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2812349495",
