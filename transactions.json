@@ -15105,7 +15105,17 @@
         "CARDNO": "2814292876",
         "HEAD OF THE FAMILY": "Oruganti Lakshmi",
         "UNITS": "3",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Oruganti Apparao",
+            "FPS": "0428011",
+            "Month": "November",
+            "Year": "2026",
+            "Date": "02-11-2026",
+            "Type": "Bio",
+            "Rice(KG)": 15.0,
+            "Expected(KG)": 15,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2806212151",
@@ -18269,7 +18279,17 @@
         "CARDNO": "2819335044",
         "HEAD OF THE FAMILY": "Bondala Appalanarsa",
         "UNITS": "3",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Bondala Appalanarsa",
+            "FPS": "0428012",
+            "Month": "November",
+            "Year": "2026",
+            "Date": "02-11-2026",
+            "Type": "Bio",
+            "Rice(KG)": 15.0,
+            "Expected(KG)": 15,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2819251105",
