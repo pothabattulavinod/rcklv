@@ -2491,7 +2491,17 @@
         "CARDNO": "2806836427",
         "HEAD OF THE FAMILY": "Thentu Bangaramma",
         "UNITS": "2",
-        "CURRENT_MONTH_TRANSACTION": null
+        "CURRENT_MONTH_TRANSACTION": {
+            "Member": "Thentu Bangaramma",
+            "FPS": "0428040",
+            "Month": "November",
+            "Year": "2026",
+            "Date": "04-11-2026",
+            "Type": "Bio",
+            "Rice(KG)": 10.0,
+            "Expected(KG)": 10,
+            "Status": "Done"
+        }
     },
     {
         "CARDNO": "2807210312",
